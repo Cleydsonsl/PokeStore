@@ -1,3 +1,5 @@
 export function Dashboard() {
-  return
+  return (
+    <div>m</div>
+  )
 }
