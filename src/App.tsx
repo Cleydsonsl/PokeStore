@@ -1,5 +1,12 @@
+import {InputPrimario}   from "./components/Input/InputPrimario/index";
 export function App() {
   return (
-    <h1>Hello PokéStore</h1>
+    <div>
+      <h1>Hello PokéStore</h1>
+
+      <InputPrimario 
+        placeholder={"test"}
+      />
+    </div>
   );
 }
