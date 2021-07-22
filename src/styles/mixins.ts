@@ -7,5 +7,11 @@ export const mixins = {
     white: '#FFFFFF',
     gray: '#5F5F5F',
     gray2: '#CCCCCC'
+  },
+  fonts: {
+    regular: 'Poppins-Regular', 
+    medium: 'Poppins-Medium', 
+    semibold: 'Poppins-Semibold',
+    bold: 'Poppins-Bold'
   }
 }
