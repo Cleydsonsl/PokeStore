@@ -2,14 +2,14 @@ import styled from 'styled-components';
 import { mixins } from '../../styles/mixins';
    
 export const Box = styled.div`
-  padding: 80px 60px;
+  padding: 20px 15px;
   background: ${mixins.colors.secondary};
   position: absolute;
   bottom: 0;
   width: 100%;
      
   @media (max-width: 1000px) {
-    padding: 70px 30px;
+    padding: 40px 20px;
   }
 `;
    
@@ -25,14 +25,14 @@ export const Column = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin-left: 60px;
+  margin-left: 10px;
 `;
    
 export const Row = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, 
                          minmax(185px, 1fr));
-  grid-gap: 20px;
+  grid-gap: 10px;
    
   @media (max-width: 1000px) {
     grid-template-columns: repeat(auto-fill, 
@@ -45,6 +45,8 @@ export const FooterLink = styled.a`
   margin-bottom: 20px;
   font-size: 18px;
   text-decoration: none;
+  align-items: flex-start;
+  vertical-align: middle;
    
   &:hover {
       color: ${mixins.colors.primary};
@@ -52,9 +54,21 @@ export const FooterLink = styled.a`
   }
 `;
    
-export const Heading = styled.p`
+export const Title = styled.p`
   font-size: 24px;
   color: #fff;
   margin-bottom: 40px;
   font-weight: bold;
+`;
+
+export const Social = styled.img`
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+`;
+
+export const Logo = styled.img`
+  height: 57px;
+  width: 166px;
+  margin: 20px 0 0 0;
 `;
