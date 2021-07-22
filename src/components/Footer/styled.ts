@@ -1,35 +1,60 @@
-import styled from 'styled-components'
-
-const Footer = styled.div`
-position: absolute;
-bottom: 0%;
-left: 0%;
-height: 340px;
-width: 100%;
-background: #1a4277;
-border: none;
-align
+import styled from 'styled-components';
+import { mixins } from '../../styles/mixins';
+   
+export const Box = styled.div`
+  padding: 80px 60px;
+  background: ${mixins.colors.secondary};
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+     
+  @media (max-width: 1000px) {
+    padding: 70px 30px;
+  }
+`;
+   
+export const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
 `
-
-const Wrapper = styled.div`
-position: absolute;
-bottom: 10px;
-padding: 25px;
-`
-
-const Title = styled.p`
-font-size: 1.6rem;
-color: #ffcc04;
-`
-
-const Text = styled.p`
-font-size: 1.2rem;
-color: #ffcc04;
-`
-
-export const S ={
-    Footer,
-    Wrapper,
-    Title,
-    Text,
-}
+   
+export const Column = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 60px;
+`;
+   
+export const Row = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 
+                         minmax(185px, 1fr));
+  grid-gap: 20px;
+   
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(auto-fill, 
+                           minmax(200px, 1fr));
+  }
+`;
+   
+export const FooterLink = styled.a`
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-decoration: none;
+   
+  &:hover {
+      color: ${mixins.colors.primary};
+      transition: 200ms ease-in;
+  }
+`;
+   
+export const Heading = styled.p`
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 40px;
+  font-weight: bold;
+`;
