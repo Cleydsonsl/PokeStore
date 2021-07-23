@@ -35,6 +35,7 @@ export const User = styled.div`
     align-items: center;
     justify-content: space-around;
     width: 1280px;
+    
     label {
       position: relative;
     }
