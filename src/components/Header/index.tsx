@@ -5,9 +5,10 @@ import logoImg from '../../assets/logo2.png';
 
 interface HeaderProps {
   onOpenNewRegisterModal: () => void;
+  onOpenLoginModal: () => void;
 }
 
-export function Header({ onOpenNewRegisterModal }: HeaderProps) {
+export function Header({ onOpenNewRegisterModal, onOpenLoginModal }: HeaderProps) {
   return (
     <Container>
       <Content>
@@ -21,6 +22,7 @@ export function Header({ onOpenNewRegisterModal }: HeaderProps) {
           
           <div className="user">
             <FaUser className="FaUser"/> Faça seu <button type="button" 
+              onClick={onOpenLoginModal}
             >
               Login
             </button> ou <button type="button" onClick={onOpenNewRegisterModal}>
