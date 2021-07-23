@@ -8,7 +8,7 @@ export const Box = styled.div`
   bottom: 0;
   width: 100%;
      
-  @media (max-width: 100%) {
+  @media (width: 95%) {
     padding: 40px 20px;
   }
 `;
@@ -17,7 +17,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center, space-between;
-    max-width: 90%;
+    width: 95%;
     margin: 0 auto;
 `
    
@@ -32,7 +32,7 @@ export const Row = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, 
                          minmax(185px, 1fr));
-  grid-gap: 5%;
+  grid-gap: 30px;
    
   @media (max-width: 90%) {
     grid-template-columns: repeat(auto-fill, 
@@ -61,11 +61,11 @@ export const Title = styled.p`
   font-weight: bold;
 `;
 
-export const Social = styled.img`
+/*export const Social = styled.img`
   height: 20px;
   width: 20px;
   vertical-align: middle;
-`;
+`;*/
 
 export const Logo = styled.img`
   height: 57px;

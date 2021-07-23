@@ -15,11 +15,11 @@ export function Header() {
           </label>
           
           <div className="user">
-            <FaUser className="FaUser"/> Faça seu <a href="#">Login</a> ou <a href="#">Cadastre-se</a>
+            <FaUser /> Faça seu <a href="#">Login</a> ou <a href="#">Cadastre-se</a>
           </div>
 
           <div className="car">
-            <FaShoppingCart className="ShopCar"/> Seu carrinho tem <a href="#">0</a> produtos
+            <FaShoppingCart /> Seu carrinho tem <a href="#">0</a> produtos
           </div>
         </div>
       </User>

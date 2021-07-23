@@ -1,8 +1,5 @@
-import facebook from '../../assets/facebook.svg';
-import twitter from '../../assets/twitter.svg';
-import youtube from '../../assets/youtube.svg';
-import instagram from '../../assets/instagram.svg';
-import logowhite from '../../assets/logowhite.png'
+import {FaFacebookSquare, FaInstagramSquare, FaTwitterSquare, FaYoutubeSquare} from 'react-icons/fa';
+import logowhite from '../../assets/logowhite.png';
 
 import {
 Box,
@@ -11,7 +8,6 @@ Row,
 Column,
 FooterLink,
 Title,
-Social,
 Logo,
 } from "./styled";
 
@@ -45,24 +41,16 @@ return (
 		<Column>
 			<Title>Social Media</Title>
 			<FooterLink href="#">
-			<span style={{ marginLeft: "10px" }}> 
-			<Social src={facebook}/>&ensp;Facebook</span>
-			
+				<FaFacebookSquare />&ensp;Facebook			
 			</FooterLink>
 			<FooterLink href="#">
-				<span style={{ marginLeft: "10px" }}>
-					<Social src={instagram}/>&ensp;Instagram</span>
-			
+				<FaInstagramSquare />&ensp;Instagram			
 			</FooterLink>
 			<FooterLink href="#">
-				<span style={{ marginLeft: "10px" }}>
-					<Social src={twitter}/>&ensp;Twitter</span>
-			
+				<FaTwitterSquare />&ensp;Twitter			
 			</FooterLink>
 			<FooterLink href="#">
-				<span style={{ marginLeft: "10px" }}>
-					<Social src={youtube}/>&ensp;Youtube</span>
-			
+				<FaYoutubeSquare />&ensp;Youtube			
 			</FooterLink>
 		</Column>
 		</Row>
