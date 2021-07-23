@@ -35,6 +35,7 @@ export const User = styled.div`
     align-items: center;
     justify-content: space-around;
     width: 1280px;
+    
     label {
       position: relative;
     }
@@ -94,12 +95,21 @@ export const User = styled.div`
       }
 
     }
-
     a {
       color: ${mixins.colors.background};
       text-decoration: none;
       font-size: 0.9rem;
       font-weight: 700;
+    }
+
+    button {
+      color: ${mixins.colors.background};
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 700;
+      background: transparent;
+      border: 0;
+      padding: 0;
     }
   }
 `;
