@@ -8,7 +8,7 @@ export const Box = styled.div`
   bottom: 0;
   width: 100%;
      
-  @media (max-width: 1000px) {
+  @media (max-width: 100%) {
     padding: 40px 20px;
   }
 `;
@@ -16,8 +16,8 @@ export const Box = styled.div`
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    max-width: 1000px;
+    justify-content: center, space-between;
+    max-width: 90%;
     margin: 0 auto;
 `
    
@@ -32,9 +32,9 @@ export const Row = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, 
                          minmax(185px, 1fr));
-  grid-gap: 10px;
+  grid-gap: 5%;
    
-  @media (max-width: 1000px) {
+  @media (max-width: 90%) {
     grid-template-columns: repeat(auto-fill, 
                            minmax(200px, 1fr));
   }
