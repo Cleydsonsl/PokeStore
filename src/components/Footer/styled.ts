@@ -1,44 +1,36 @@
 import styled from 'styled-components';
 import { mixins } from '../../styles/mixins';
    
-export const Box = styled.div`
-  padding: 20px 15px;
+export const Container = styled.footer`
+  margin-top: 3rem;
+  padding: 2rem;
   background: ${mixins.colors.secondary};
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-     
-  @media (width: 95%) {
-    padding: 40px 20px;
+`;
+
+export const Content = styled.div`
+  justify-content: center;
+  display: flex;
+  grid-template-columns: repeat(auto-fill, 
+                         minmax(11.5rem, 1fr));
+  grid-gap: 30px;
+   
+  @media (max-width: 90%) {
+    grid-template-columns: repeat(auto-fill, 
+                           minmax(1.7rem, 1fr));
   }
 `;
-   
-export const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center, space-between;
-    width: 95%;
-    margin: 0 auto;
-`
-   
+
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
   margin-left: 10px;
-`;
-   
-export const Row = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 
-                         minmax(185px, 1fr));
-  grid-gap: 30px;
-   
-  @media (max-width: 90%) {
-    grid-template-columns: repeat(auto-fill, 
-                           minmax(200px, 1fr));
+
+  img {
+    max-width: 15rem;
   }
 `;
+   
    
 export const FooterLink = styled.a`
   color: #fff;
