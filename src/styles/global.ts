@@ -52,14 +52,14 @@ export const GlobalStyle = createGlobalStyle`
   }
   .react-modal-content{
     width: 100%;
-    max-width: 576px;
-    background: var(--background);
+    max-width: 456px;
+    background: ${mixins.colors.primary};
     padding: 3rem;
     position: relative;
     border-radius: 0.25rem; 
   }
 
-  .modal-close {
+  .btnClose {
     position: absolute;
     right: 1.5rem;
     top: 1.5rem;

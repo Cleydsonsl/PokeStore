@@ -5,6 +5,7 @@ export const mixins = {
     secondary: '#004278',
     green: '#05D733',
     white: '#FFFFFF',
+    placeholder: '#5E87A8',
     gray: '#5F5F5F',
     gray2: '#CCCCCC'
   },
