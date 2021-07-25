@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { mixins } from '../../styles/mixins';
    
-export const Box = styled.div`
+export const Box = styled.footer`
   padding: 20px 15px;
   background: ${mixins.colors.secondary};
   position: absolute;
