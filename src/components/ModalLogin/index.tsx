@@ -6,7 +6,7 @@ interface LoginModalProps {
   isOpen: boolean;
   onRequestClose: () => void;
 }
-
+// pagina
 export function ModalLogin({isOpen, onRequestClose}: LoginModalProps) {
   return (
     <Modal 
