@@ -1,0 +1,10 @@
+{
+  "users": [
+    {
+      "login": "admin",
+      "password": "admin",
+      "name": "Pokemon",
+      "access_token": "liberado"
+    }
+  ]
+  }
