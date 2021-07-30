@@ -19,10 +19,13 @@ export function ShoppingCart() {
             <tbody>
                 <tr>
                     <td>
-                        <img src={imgProduct} alt="imagem" />
-                        <p>Tipo: Fogo</p> 
-                        <p>Vantagem: Grama</p> 
-                        <p>Desvantagem: Água</p> 
+                        <div>
+                            <img src={imgProduct} alt="imagem" />
+                            <div>
+                                <h3>Charmeleon</h3>
+                                <p>Tipo: Fogo</p> 
+                            </div>
+                        </div>
                     </td>
                     <td><p>R$ 1.000,00</p></td>
                     <td><input type="number" min="1"/></td>
