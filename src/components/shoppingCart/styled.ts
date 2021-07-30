@@ -15,7 +15,6 @@ export const Container = styled.div`
     margin:20px;
     height: 500px;
     background: white;
-    display: grid;
     grid-template-columns: auto auto auto auto auto;
     align-self: center;
     border-radius: 25px;
@@ -26,6 +25,51 @@ export const Container = styled.div`
       border-color: #004278; 
       border: 3px solid #004278;
       box-sizing: border-box;
+      table{
+        width: 100%;
+        text-align: center;
+        h3{
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 25px;
+          line-height: 27px;
+          color: #004278;
+        }
+
+        p{
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 24px;
+            color: #004278;
+          }
+        
+        input{
+          width: 85px;
+          height: 58px;
+          text-align: center;
+          background: #DFDDDD;
+          font-size: 20px;
+          color: #004278;
+        }
+  
+        td{
+          background: #F3F3F3;
+          height: 150px;
+
+          
+  
+          img{
+            width: 90px;
+          }
+          
+        }
+      
+      
+      }
+
 `
 export const CartContainer = styled.div`
      
@@ -47,7 +91,7 @@ export const DivCep = styled.div`
     box-sizing: border-box;
     text-align: center;
 
-    p{
+    h3{
       font-family: Poppins;
       font-style: normal;
       font-weight: bold;
@@ -79,7 +123,7 @@ export const DivCompra = styled.div`
     text-align: center;
     display: flex;
 
-    p{
+    h3{
       margin-top: 20px;
       font-family: Poppins;
       font-style: normal;
