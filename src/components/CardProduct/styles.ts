@@ -25,7 +25,21 @@ export const Grid = styled.div`
   grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 0.5rem;
   grid-row-gap: 0.5rem;
-`
+
+  @media(max-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media(max-width: 1080px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media(max-width: 750px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media(max-width: 500px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+`;
 export const Card = styled.button`
   max-width: 21.1rem;
   border: solid 2px;
@@ -36,9 +50,19 @@ export const Card = styled.button`
   justify-content: center;
   padding: 1rem;
 
-  img {
-    max-width: 9.1rem;
+  .img{
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    img {
+      max-width: 8rem;
+    }
   }
+
+  
 
   h2 {
     color: ${mixins.colors.secondary};
