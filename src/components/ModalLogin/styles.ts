@@ -113,3 +113,10 @@ export const Container = styled.form`
     }
   }  
 `;
+export const Styled = {
+  Error: styled.p`
+      align-self: center;
+      justify-self: center;
+      
+  `
+}

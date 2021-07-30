@@ -7,9 +7,23 @@ import React, {
 
   import { api } from '../../../services/api'
 
-  const AuthContext = createContext({});
+  export interface AuthContextData {
+    auth: string;
+    error: string;
+   
+    signIn(credentials: SignInCredentials): Promise<void>;
+    signOut(): void;
+}
+export interface SignInCredentials {
+  login: string;
+  password: string;
+}
+  const AuthContext = createContext<AuthContextData>(
+    {} as AuthContextData,
+  );
 
-  const AuthProvider = ({ children }) => {
+
+  const AuthProvider : React.FC = ({ children }) => {
     const [auth, setAuth] = useState(() => {
       const token = sessionStorage.getItem('@Academia_login');
   
@@ -63,7 +77,7 @@ import React, {
     );
   };
   
-  function useAuth() {
+  function useAuth() : AuthContextData {
     const context = useContext(AuthContext);
   
     return context;

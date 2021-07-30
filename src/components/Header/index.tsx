@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Container, Content, User } from './styles';
 import { FaUser, FaShoppingCart } from 'react-icons/fa';
 import logoImg from '../../assets/logo2.png';
+import { ModalLogin } from '../ModalLogin';
 
 interface HeaderProps {
   onOpenNewRegisterModal: () => void;
