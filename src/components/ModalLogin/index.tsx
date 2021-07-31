@@ -39,7 +39,7 @@ export function ModalLogin({isOpen, onRequestClose}: LoginModalProps) {
 
   return (
     <Modal 
-      isOpen={true}
+      isOpen={isOpen}
       onRequestClose={onRequestClose}
       overlayClassName="react-modal-overlay"
       className="react-modal-content"
