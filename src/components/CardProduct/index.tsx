@@ -21,7 +21,7 @@ export function CardProduct() {
   
 
   useEffect(() => {
-    api.get('/pokemon?max=10')
+    api.get('/pokemon?_limit=10')
     .then(response => { 
       setPokeCard(response.data ); 
       console.log(pokeCard)})
@@ -40,9 +40,7 @@ export function CardProduct() {
               
             <h2>{`${pokecard.name} ${pokecard.cardNumber}`}</h2>
             <div className="descriptions">
-              <p>Tipo: {`${pokecard.type.tp1} ${pokecard.type.tp2}`}</p> <br/>
-              Vantagem: Grama <br/>
-              Desvantagem: Água
+              <p>Tipo: {`${pokecard.type.tp1} ${pokecard.type.tp2}`}</p>
             </div>
             <div className="values">
               <p className="cifr">R$</p>
