@@ -108,5 +108,12 @@
          "tp2": ""
        }
       }
+   ],
+   "user": [
+     {
+      "login": "teste",
+      "password": "teste",
+      "access_token": "liberado"
+     }
    ]
 }

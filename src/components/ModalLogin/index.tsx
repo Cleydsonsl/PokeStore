@@ -1,9 +1,11 @@
 import Modal from 'react-modal';
 import { GrClose } from 'react-icons/gr'
 import { Container } from './styles';
-import React, {useCallback} from 'react';
-import { useForm, SubmitHandler } from "react-hook-form";
+import {useCallback} from 'react';
+import { useForm} from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
+import { useHistory } from 'react-router-dom';
+//import { useAuth } from '../../hooks/context/AuthProvider'
 import * as yup from "yup";
 
 type Inputs = {
@@ -22,11 +24,16 @@ interface LoginModalProps {
 }
 
 export function ModalLogin({isOpen, onRequestClose}: LoginModalProps) {
+  //const { signIn, error } = useAuth();
+  const history = useHistory();
   const { register, handleSubmit, formState: { errors } } = useForm<Inputs>({
     resolver: yupResolver(schema)
   });
-  const onSubmit =  useCallback((data) => {
+  
+  const onSubmit =  useCallback(async(data) => {
     console.log(data)
+    //await signIn(data)
+    history.push("/home")
   }, []);
   
 
