@@ -21,7 +21,7 @@ export function CardProduct() {
   
 
   useEffect(() => {
-    api.get('/pokemon?_limit=10')
+    api.get('/pokemon')
     .then(response => { 
       setPokeCard(response.data ); 
       console.log(pokeCard)})

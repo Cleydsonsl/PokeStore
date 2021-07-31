@@ -14,8 +14,6 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   margin: 5rem;
-  max-width: 1223px;
-  max-height: 752px;
   display: flex;
   align-items: center;
   justify-content: center;
