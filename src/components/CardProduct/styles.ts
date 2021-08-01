@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 import { mixins } from "../../styles/mixins"
+import Lupa from '../../assets/lupa.svg';
 
 export const Container = styled.div`
+  margin: 0;
   background: ${mixins.colors.background};
-  margin-top: 40px;
+  
   margin-bottom: 40px;
   
   display: flex;
@@ -36,22 +38,18 @@ export const Content = styled.div`
 export const Grid = styled.div`
   margin: 20px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 20rem);
   grid-column-gap: 1.5rem;
   grid-row-gap: 1.5rem;
-
-  @media(max-width: 1200px) {
-    grid-template-columns: repeat(4, 1fr);
+  
+  @media(max-width: 1350px) {
+    grid-template-columns: repeat(3, 20rem);
   }
-
   @media(max-width: 1080px) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 20rem);
   }
   @media(max-width: 750px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @media(max-width: 500px) {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 20rem);
   }
 `;
 
@@ -153,3 +151,103 @@ export const Pag = styled.div`
     }
   }
 `
+
+export const User = styled.div`
+  background: ${mixins.colors.secondary};
+  width: 100%;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .blue {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1350px;
+    
+    .div {
+      display: flex;
+      label {
+        position: relative;
+      }
+
+      label:before {
+        content: "";
+        position: absolute;
+        left: 1rem;
+        top: 0.7rem;
+        bottom: 0;
+        width: 20px;
+        background: url(${Lupa}) no-repeat;
+      }
+
+      input {
+        width: 391px;
+        padding: 0.7rem 1rem 0.7rem 3rem;
+        border-radius: 5px;
+        border: 0;
+        background: ${mixins.colors.background};
+
+        &::placeholder {
+          color: ${mixins.colors.gray2};
+        }
+      }
+    }
+
+    .users{
+      display: flex;
+      .user {
+      padding: 0;
+      margin: 0;
+      display: block;
+      align-items: center;
+      justify-content: center;
+      font-weight: 400;
+      font-size: 0.9rem;
+      margin-left: 1rem;
+
+      .FaUser {
+        color: ${mixins.colors.white};
+        width: 20px;
+      }
+
+      color: ${mixins.colors.background}
+
+    }
+
+    .car {
+      padding: 0;
+      margin-left: 1rem;
+      color: ${mixins.colors.background};
+      font-weight: 400;
+      font-size: 0.9rem;
+      align-items: center;
+
+      .ShopCar {
+        color: ${mixins.colors.white};
+        width: 20px;
+      }
+
+    }
+    a {
+      color: ${mixins.colors.background};
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    button {
+      color: ${mixins.colors.background};
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 700;
+      background: transparent;
+      border: 0;
+      padding: 0;
+    }
+    }
+
+    
+  }
+`;
