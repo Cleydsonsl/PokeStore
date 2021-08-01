@@ -1,21 +1,22 @@
 import Modal from 'react-modal';
 import { GrClose } from 'react-icons/gr'
 import { Container } from './styles';
-import {useCallback} from 'react';
+import {useCallback, useContext} from 'react';
 import { useForm} from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useHistory } from 'react-router-dom';
+import { AuthContext } from '../../contextApi/AuthProvider';
 //import { useAuth } from '../../hooks/context/AuthProvider'
 import * as yup from "yup";
 
 type Inputs = {
-  login: string,
-  senha: string
+  email: string,
+  password: string
 };
 
 let schema = yup.object().shape({
-  login: yup.string().required('Login é obrigatório'),
-  senha: yup.string().required('Senha é obrigatório')
+  email: yup.string().email('Informe um email válido').required('Login é obrigatório'),
+  password: yup.string().required('Senha é obrigatório')
 });
 
 interface LoginModalProps {
@@ -24,18 +25,19 @@ interface LoginModalProps {
 }
 
 export function ModalLogin({isOpen, onRequestClose}: LoginModalProps) {
-  //const { signIn, error } = useAuth();
+  const { signIn } = useContext(AuthContext);
+
   const history = useHistory();
   const { register, handleSubmit, formState: { errors } } = useForm<Inputs>({
     resolver: yupResolver(schema)
   });
   
-  const onSubmit =  useCallback(async(data) => {
+  async function onSubmit(data: Inputs) {
     console.log(data)
-    //await signIn(data)
-    history.push("/home")
-  }, []);
-  
+    await signIn(data);
+   
+  };
+
 
   return (
     <Modal 
@@ -57,11 +59,11 @@ export function ModalLogin({isOpen, onRequestClose}: LoginModalProps) {
         <h2>Faça seu login</h2>
         
       
-          <input placeholder="Nome" {...register("login")}/>
-          <p>{errors.login && <span>{errors.login.message}</span>}</p>
+          <input placeholder="Nome" {...register("email")}/>
+          <p>{errors.email && <span>{errors.email.message}</span>}</p>
 
-          <input type="password" placeholder="Senha" {...register("senha")}/>
-          <p>{errors.senha && <span>{errors.senha.message}</span>}</p>
+          <input type="password" placeholder="Senha" {...register("password")}/>
+          <p>{errors.password && <span>{errors.password.message}</span>}</p>
 
           <div className="senha">
             <p>Esqueci minha <a href="">senha</a></p>

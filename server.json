@@ -109,9 +109,9 @@
        }
       }
    ],
-   "user": [
+   "users": [
      {
-      "login": "teste",
+      "email": "teste@email.com",
       "password": "teste",
       "access_token": "liberado"
      }
