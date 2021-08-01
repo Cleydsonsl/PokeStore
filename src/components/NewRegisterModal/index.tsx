@@ -63,20 +63,16 @@ export function NewRegisterModal({isOpen, onRequestClose}: NewRegisterModalProps
         <h2>Crie sua conta</h2>
 
         <input placeholder="Nome" {...register("name")}/>
-
-        <p>{errors.name && <span>{errors.name.message}</span>}</p> 
+        <p>{errors.name?.message}</p> 
 
         <input placeholder="E-mail" {...register("email")} />
-
-        <p>{errors.email && <span>{errors.email.message}</span>}</p> 
+        <p>{errors.email?.message}</p> 
 
         <input type="password" placeholder="Senha" {...register("password")}/>
-
-         <p>{errors.password && <span>{errors.password.message}</span>}</p>
-
+         <p>{errors.password?.message}</p>
+         
         <input type="password" placeholder="Confirme sua senha" {...register("confirmedPassword")}/>
-
-         <p>{errors.confirmedPassword && <span>{errors.confirmedPassword.message}</span>}</p>
+         <p>{errors.confirmedPassword?.message}</p>
 
         <div>
           <p>Ao se registrar, você aceita nossos <a href="">termos de uso </a> e </p>
