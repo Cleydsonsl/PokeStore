@@ -1,5 +1,4 @@
-import { Card, Container, Content, Grid, Pag } from './styles';
-import { GrFormNext, GrFormPrevious } from 'react-icons/gr';
+import { Card, Container, Content, Grid } from './styles';
 import { useEffect, useState } from 'react';
 import { api } from '../../services/api';
 
@@ -18,15 +17,27 @@ interface IPokeProduct {
 export function CardProduct() { 
 
   const [ pokeCard, setPokeCard ] = useState<IPokeProduct[]>([])
-  
+  const [ currentPage, setCurrentPage ] = useState(0);
 
   useEffect(() => {
-    api.get('/pokemon')
-    .then(response => { 
-      setPokeCard(response.data ); 
-      console.log(pokeCard)})
+    api.get(`/pokemon?_page=${currentPage}&per_page=10`)
+    .then(response => {setPokeCard(response.data)})
+    //.then((newPokes:void) => setPokeCard((prevPoke) => [...prevPoke, ...newPokes.]))
     .catch(err => console.log(err));
-  }, [pokeCard]);
+  }, [currentPage]);
+
+  useEffect(() => {
+    const intersectionObserver = new IntersectionObserver((entries) => {
+      if(entries.some((entry) => entry.isIntersecting)) {
+        console.log('Elemento visivel');
+        setCurrentPage((currentPageInsideState) => currentPageInsideState + 1)
+      }
+    });
+
+    intersectionObserver.observe(document.querySelector('#sentinel') as HTMLInputElement);
+
+    return () => intersectionObserver.disconnect()
+  }, []);
   
   return (
     <Container>
@@ -51,15 +62,7 @@ export function CardProduct() {
           ))}
         </Grid>
       </Content>
-      <Pag>
-        <div className="page">  
-          <a href=""><GrFormPrevious /> Return</a>
-          <a href="">Next <GrFormNext/></a>
-        </div>
-      </Pag>
+      <p id="sentinel"/>
     </Container>
   )
 }
-
-
-
