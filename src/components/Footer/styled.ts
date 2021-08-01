@@ -8,7 +8,7 @@ export const Container = styled.footer`
 `;
 
 export const Content = styled.div`
-  justify-content: center;
+  justify-content: space-around;
   display: flex;
   grid-template-columns: repeat(auto-fill, 
                          minmax(11.5rem, 1fr));
@@ -27,7 +27,7 @@ export const Column = styled.div`
   margin-left: 10px;
 
   img {
-    max-width: 15rem;
+    max-width: 12rem;
   }
 `;
    
@@ -35,7 +35,7 @@ export const Column = styled.div`
 export const FooterLink = styled.a`
   color: #fff;
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
   align-items: flex-start;
   vertical-align: middle;

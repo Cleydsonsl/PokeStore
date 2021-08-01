@@ -3,6 +3,8 @@ import { mixins } from "../../styles/mixins"
 
 export const Container = styled.div`
   background: ${mixins.colors.background};
+  margin-top: 40px;
+  margin-bottom: 40px;
   
   display: flex;
   align-items: center;
@@ -12,19 +14,31 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   margin: 5rem;
-  max-width: 1223px;
-  max-height: 752px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media(max-width: 1200px) {
+    height: auto;
+  }
+
+  @media(max-width: 1080px) {
+    height: auto;
+  }
+  @media(max-width: 750px) {
+    height: auto;
+  }
+  @media(max-width: 500px) {
+    height: auto;
+  }
 `
 
 export const Grid = styled.div`
-  margin: 0;
+  margin: 20px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-column-gap: 0.5rem;
-  grid-row-gap: 0.5rem;
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
 
   @media(max-width: 1200px) {
     grid-template-columns: repeat(4, 1fr);
@@ -40,6 +54,7 @@ export const Grid = styled.div`
     grid-template-columns: repeat(1, 1fr);
   }
 `;
+
 export const Card = styled.button`
   max-width: 21.1rem;
   border: solid 2px;
@@ -48,6 +63,8 @@ export const Card = styled.button`
   border-radius: 1.5rem;
   align-items: center;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
   padding: 1rem;
 
   .img{
@@ -72,7 +89,6 @@ export const Card = styled.button`
   }
 
   .descriptions {
-    margin-left: 1.2rem;
     margin-top: 0.2rem;
     padding: 0;
     text-align: left;
@@ -84,7 +100,6 @@ export const Card = styled.button`
 
   .values {
     padding: 0;
-    margin-top: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -114,17 +129,11 @@ export const Card = styled.button`
   }
 
 `
-export const CardImg = styled.img`
-  position: absolute;
-  width: 146px;
-  height: 136px;
-  left: 915px;
-  top: 343px;
-`
 export const Pag = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 40px;
 
   .page {
     
