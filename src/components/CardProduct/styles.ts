@@ -170,11 +170,37 @@ export const User = styled.div`
   align-items: center;
   justify-content: space-around;
 
+  @media(max-width: 1080px) {
+    height: 116px;
+  }
+  @media(max-width: 750px) {
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
   .blue {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 1350px;
+
+    @media(max-width: 1350px) {
+      width: 1000px;
+    }
+    @media(max-width: 1080px) {
+      width: 610px;
+    }
+    @media(max-width: 750px) {
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
     
     .div {
       display: flex;
@@ -193,11 +219,15 @@ export const User = styled.div`
       }
 
       input {
-        width: 391px;
+        width: 22rem;
         padding: 0.7rem 1rem 0.7rem 3rem;
         border-radius: 5px;
         border: 0;
         background: ${mixins.colors.background};
+
+        @media(max-width: 750px) {
+          width: 22rem;
+        }
 
         &::placeholder {
           color: ${mixins.colors.gray2};
@@ -207,6 +237,14 @@ export const User = styled.div`
 
     .users{
       display: flex;
+      align-items:center;
+      justify-content: space-around;
+
+      @media(max-width: 750px) {
+        margin-top: 1rem;
+        width: 23rem;
+      }
+
       .user {
       padding: 0;
       margin: 0;
@@ -233,6 +271,10 @@ export const User = styled.div`
       font-weight: 400;
       font-size: 0.9rem;
       align-items: center;
+
+      @media(max-width: 750px) {
+        margin-left: 0;
+      }
 
       .ShopCar {
         color: ${mixins.colors.white};
