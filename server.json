@@ -1,112 +1,176 @@
 {
-  "pokemon":[
-     {
-        "id": 1,
-        "name":"bulbasaur",
-        "desc": "Desde que nasce, ela cresce se alimentando dos nutrientes contidos na semente de suas costas.",
-        "price": "234",
-        "cardNumber": "#001",
-        "type": {
-           "tp1": "Planta",
-           "tp2": "Venenoso"
-         }
-     },
-     {
+  "pokemon": [
+    {
+      "id": 1,
+      "name": "bulbasaur",
+      "desc": "Desde que nasce, ela cresce se alimentando dos nutrientes contidos na semente de suas costas.",
+      "price": "234",
+      "cardNumber": "#001",
+      "type": {
+        "tp1": "Planta",
+        "tp2": "Venenoso"
+      }
+    },
+    {
       "id": 2,
-      "name":"ivysaur",
+      "name": "ivysaur",
       "desc": "La luz del sol lo fortalece y hace que le crezca el capullo que tiene en el lomo.",
       "price": "350",
       "cardNumber": "#002",
       "type": {
-         "tp1": "Planta",
-         "tp2": "Venenoso"
-       }
-      },
-      {
-       "id": 3,
-       "name":"venusaur",
-       "desc": "A flor no dorso libera um aroma delicado, que tem efeito relaxante no combate.",
-       "price": "500",
-       "cardNumber": "#003",
-       "type": {
-         "tp1": "Planta",
-         "tp2": "Venenoso"
-       }
-      },
-      {
-       "id": 4,
-       "name":"charmander",
-       "desc": "Este Pokémon nasce com uma chama na ponta da cauda. Se fosse desligado, ele morreria.",
-       "price": "230",
-       "cardNumber": "#004",
-       "type": {
-         "tp1": "Fogo"
-       }
-      },
-      {
-       "id": 5,
-       "name":"charmeleon",
-       "desc": "Se exaltado em combate, ele envia chamas intensas que incineram tudo ao seu redor.",
-       "price": "420",
-       "cardNumber": "#005",
-       "type": {
-         "tp1": "Fogo"
-       }
-      },
-      {
-       "id": 6,
-       "name":"charizard",
-       "desc": "Suas asas poderosas permitem que ele voe a uma altura de 1.400 m. Ele cospe chamas que atingem temperaturas extremamente altas.",
-       "price": "860",
-       "cardNumber": "#006",
-       "type": {
-         "tp1": "Fogo",
-         "tp2": "Voador"
-       }
-      },
-      {
-       "id": 7,
-       "name":"squirtle",
-       "desc": "Quando se sente em perigo, ele se esconde em sua concha e cospe jatos de água de sua boca.",
-       "price": "380",
-       "cardNumber": "#007",
-       "type": {
-         "tp1": "Água",
-         "tp2": ""
-       }
-      },
-      {
-       "id": 8,
-       "name":"wartortle",
-       "desc": "É considerado um símbolo de longevidade. Os espécimes mais antigos apresentam musgo na concha.",
-       "price": "450",
-       "cardNumber": "#008",
-       "type": {
-         "tp1": "Água",
-         "tp2": ""
-       }
-      },
-      {
-       "id": 9,
-       "name":"blastoise",
-       "desc": "Ele lança jatos de água através dos barris de sua concha, capazes de perfurar até mesmo o aço.",
-       "price": "920",
-       "cardNumber": "#009",
-       "type": {
-         "tp1": "Água",
-         "tp2": ""
-       }
-      },
-      {
-       "id": 10,
-       "name":"caterpie",
-       "desc": "Suas pernas curtas são cobertas por ventosas que lhe permitem escalar paredes e encostas sem descanso.",
-       "price": "220",
-       "cardNumber": "#010",
-       "type": {
-         "tp1": "Inseto",
-         "tp2": ""
-       }
+        "tp1": "Planta",
+        "tp2": "Venenoso"
       }
-   ]
+    },
+    {
+      "id": 3,
+      "name": "venusaur",
+      "desc": "A flor no dorso libera um aroma delicado, que tem efeito relaxante no combate.",
+      "price": "500",
+      "cardNumber": "#003",
+      "type": {
+        "tp1": "Planta",
+        "tp2": "Venenoso"
+      }
+    },
+    {
+      "id": 4,
+      "name": "charmander",
+      "desc": "Este Pokémon nasce com uma chama na ponta da cauda. Se fosse desligado, ele morreria.",
+      "price": "230",
+      "cardNumber": "#004",
+      "type": {
+        "tp1": "Fogo"
+      }
+    },
+    {
+      "id": 5,
+      "name": "charmeleon",
+      "desc": "Se exaltado em combate, ele envia chamas intensas que incineram tudo ao seu redor.",
+      "price": "420",
+      "cardNumber": "#005",
+      "type": {
+        "tp1": "Fogo"
+      }
+    },
+    {
+      "id": 6,
+      "name": "charizard",
+      "desc": "Suas asas poderosas permitem que ele voe a uma altura de 1.400 m. Ele cospe chamas que atingem temperaturas extremamente altas.",
+      "price": "860",
+      "cardNumber": "#006",
+      "type": {
+        "tp1": "Fogo",
+        "tp2": "Voador"
+      }
+    },
+    {
+      "id": 7,
+      "name": "squirtle",
+      "desc": "Quando se sente em perigo, ele se esconde em sua concha e cospe jatos de água de sua boca.",
+      "price": "380",
+      "cardNumber": "#007",
+      "type": {
+        "tp1": "Água",
+        "tp2": ""
+      }
+    },
+    {
+      "id": 8,
+      "name": "wartortle",
+      "desc": "É considerado um símbolo de longevidade. Os espécimes mais antigos apresentam musgo na concha.",
+      "price": "450",
+      "cardNumber": "#008",
+      "type": {
+        "tp1": "Água",
+        "tp2": ""
+      }
+    },
+    {
+      "id": 9,
+      "name": "blastoise",
+      "desc": "Ele lança jatos de água através dos barris de sua concha, capazes de perfurar até mesmo o aço.",
+      "price": "920",
+      "cardNumber": "#009",
+      "type": {
+        "tp1": "Água",
+        "tp2": ""
+      }
+    },
+    {
+      "id": 10,
+      "name": "caterpie",
+      "desc": "Suas pernas curtas são cobertas por ventosas que lhe permitem escalar paredes e encostas sem descanso.",
+      "price": "220",
+      "cardNumber": "#010",
+      "type": {
+        "tp1": "Inseto",
+        "tp2": ""
+      }
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "login": "teste",
+      "password": "teste",
+      "name": "teste",
+      "access_token": "liberado"
+    },
+    {
+      "name": "test",
+      "email": "test",
+      "password": "test",
+      "id": 2
+    },
+    {
+      "name": "CARLOS EDUARDO SANTIAGO PAIVA",
+      "email": "eduardok86@gmail.com",
+      "password": "123",
+      "confirmedPassword": "123",
+      "id": 3
+    },
+    {
+      "name": "teste 4",
+      "email": "email@gmail.com",
+      "password": "123",
+      "confirmedPassword": "123",
+      "id": 4
+    },
+    {
+      "name": "test3",
+      "email": "email@email.com",
+      "password": "1234",
+      "confirmedPassword": "1234",
+      "id": 5
+    },
+    {
+      "name": "test3",
+      "email": "email@email.com",
+      "password": "1234",
+      "confirmedPassword": "1234",
+      "id": 6
+    },
+    {
+      "name": "Carlos Eduardo",
+      "email": "eduardok86@gmail.com",
+      "password": "123",
+      "confirmedPassword": "123",
+      "id": 7
+    },
+    {
+      "name": "CARLOS EDUARDO SANTIAGO PAIVA",
+      "email": "eduardok86@gmail.com",
+      "password": "123",
+      "confirmedPassword": "123",
+      "id": 8
+    },
+    {
+      "name": "ultimo teste",
+      "email": "eduardok86@gmail.com",
+      "password": "123",
+      "confirmedPassword": "123",
+      "id": 9
+    }
+  ]
 }
