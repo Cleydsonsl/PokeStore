@@ -20,7 +20,7 @@ export function CardProduct() {
   const [ currentPage, setCurrentPage ] = useState(0);
 
   useEffect(() => {
-    api.get(`/pokemon?_page=${currentPage}&per_page=10`)
+    api.get(`/pokemon?_page=${currentPage}&_limit=12`)
     .then(response => {setPokeCard(response.data)})
     //.then((newPokes:void) => setPokeCard((prevPoke) => [...prevPoke, ...newPokes.]))
     .catch(err => console.log(err));
@@ -58,6 +58,7 @@ export function CardProduct() {
               <p className="value">{pokecard.price}</p>
               <p className="valuesec">,00</p>
             </div> 
+            <button className="car" type="submit">ADICIONAR AO CARRINHO</button>
           </Card>
           ))}
         </Grid>

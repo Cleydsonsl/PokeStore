@@ -34,29 +34,26 @@ export const Content = styled.div`
 `
 
 export const Grid = styled.div`
+  
   margin: 20px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 20rem);
   grid-column-gap: 1.5rem;
   grid-row-gap: 1.5rem;
-
-  @media(max-width: 1200px) {
-    grid-template-columns: repeat(4, 1fr);
+  
+  @media(max-width: 1350px) {
+    grid-template-columns: repeat(3, 20rem);
   }
-
   @media(max-width: 1080px) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 20rem);
   }
   @media(max-width: 750px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @media(max-width: 500px) {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 20rem);
   }
 `;
 
-export const Card = styled.button`
-  max-width: 21.1rem;
+export const Card = styled.div`
+  max-width: 21rem;
   border: solid 2px;
   border-color:${mixins.colors.secondary}; 
   background: ${mixins.colors.background};
@@ -79,13 +76,11 @@ export const Card = styled.button`
     }
   }
 
-  
-
   h2 {
     color: ${mixins.colors.secondary};
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
 
   .descriptions {
@@ -126,6 +121,17 @@ export const Card = styled.button`
       color: ${mixins.colors.secondary};
       margin-top: 0.5rem;
     }
+  }
+
+  .car {
+    border: none;
+    background: ${mixins.colors.primary};
+    color: ${mixins.colors.secondary};
+    width: 17rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 800;
   }
 
 `
