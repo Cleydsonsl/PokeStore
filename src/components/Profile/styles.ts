@@ -12,7 +12,7 @@ export const Container = styled.div`
 export const Content = styled.div`
   color: white;
   margin-top: 50px;
-  max-width: 980px;
+  width: 1200px;
   height: 720px;
   display: flex;
   flex-direction: row;
@@ -22,22 +22,32 @@ export const Content = styled.div`
   border-radius: 15px;
   padding: 25px;
 
-  @media (max-width: 750px){
+  @media (max-width: 900px){
     flex-direction: column;
+    height: auto;
   }
  
 `;
 
 export const LeftColumn = styled.div`
-  width: 35%;
+  width: 21.5rem;
   justify-content: space-around;
   align-items: center;
+
+  @media (max-width: 900px){
+  width: 31rem;
+  }
 `;
 
 export const RightColumn = styled.div`
-  width: 50%;
+  width: 31rem;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 900px){
+    width: 31rem;
+    margin-top: 40px;
+  }
 `;
 
 export const AvatarName = styled.div`
@@ -51,14 +61,14 @@ export const AvatarName = styled.div`
 
   h1{
     font-size: xx-large;
-    margin-left: 15px;
+    margin-left: 15px;      
   }
 
   img{
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    margin: 30px;
+    margin: 30px;   
   }
 `;
 
@@ -72,19 +82,18 @@ export const Password = styled.div`
   }
 `;
 
-
-export const ContentData = styled.div`
+/*export const ContentData = styled.div`
   width: 100%;
   display: inline-flex;
   justify-content: space-around;
   align-items: flex-end;
-`;
+`;*/
 
 export const WhiteBox = styled.div`
   background-color: white;
   margin: 30px 0 0 30px;
   padding: 24px 0 20px 35px;
-  width: 100%;
+  width: 21.5rem;
   height: 470px;
   border-radius: 15px;
   justify-content: space-around;
@@ -94,17 +103,26 @@ export const WhiteBox = styled.div`
     justify-content: space-around;
     color: ${mixins.colors.secondary};
   }
+
+  @media (max-width: 900px){
+  width: 28rem;
+  margin: 30px 0 0 0;
+  }
 `;
 
 export const Line = styled.div`
   display: inline-block;
   border-top: 2px solid darkblue;
   margin: 18px 0 18px 0;
-  width: 80%;
+  width: 17rem;
+
+  @media (max-width: 900px){
+  width: 21rem;
+  }
 `;
 
 export const BlueBox = styled.div`
-  width: 100%;
+  width: 31rem;
   height: 480px;
   justify-content: space-around;
 
@@ -115,7 +133,7 @@ export const BlueBox = styled.div`
   }
 
   input{
-    width: 90%;
+    width: 19rem;
     height: 40px;
     border: 2px gray;
 
@@ -133,7 +151,7 @@ export const GrayLine = styled.div`
   display: inline-block;
   border-top: 2px solid gray;
   margin: 18px 0 18px 0;
-  width: 90%;
+  width: 28rem;
 `;
 
 export const VerticalLine = styled.div`
@@ -141,13 +159,19 @@ export const VerticalLine = styled.div`
   border-left: 4px solid white;
   margin: 20px;
   height: 470px;
+
+  @media (max-width: 900px){
+  border-left: 0;
+  margin: 0;
+  height: 0;
+  }
 `;
 
 export const DadosPessoais = styled.button`
   display: flex;  
   color: ${mixins.colors.secondary};
   background-color: white;
-  width: 90%;
+  width: 28rem;
   height: 100px;
   margin: 0 0 50px 0;
   border-radius: 15px;
@@ -162,7 +186,7 @@ export const Salvar = styled.button`
   display: flex;  
   color: ${mixins.colors.secondary};
   background-color: ${mixins.colors.primary};
-  width: 90%;
+  width: 28rem;
   height: 65px;
   margin: 35px 0 0 0;
   padding: 10px;
