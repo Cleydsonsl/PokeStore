@@ -1,12 +1,10 @@
 import Modal from 'react-modal';
-import { FormEvent, useState, useContext } from 'react';
+import { useContext } from 'react';
 import { GrClose } from 'react-icons/gr'
 import { Container } from './styles';
-import { useCallback } from 'react';
 import { userContext } from '../../contextApi/UserProvider';
-import { useForm } from "react-hook-form";
+import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import { useHistory } from 'react-router-dom';
 import * as yup from "yup";
 
 interface NewRegisterModalProps {

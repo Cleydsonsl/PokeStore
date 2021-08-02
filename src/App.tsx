@@ -12,15 +12,15 @@ export function App() {
   
   return (
     <BrowserRouter>
-    <AuthProvider>
-    <UserProvider>
+      <AuthProvider>
+        <UserProvider>
     
-      <Header />
+          <Header />
         
-      <Routes />
+          <Routes />
+        </UserProvider>
+      </AuthProvider>
       <GlobalStyle />
-    </UserProvider>
-    </AuthProvider>
     </BrowserRouter>
   );
 }

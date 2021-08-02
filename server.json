@@ -53,7 +53,7 @@
       "name":"Charmeleon",
       "desc": "Se exaltado em combate, ele envia chamas intensas que incineram tudo ao seu redor.",
       "price": "420",
-      "cardNumber": "#006",
+      "cardNumber": "#005",
       "amount": 6,
       "type": {
         "tp1": "Fogo",
