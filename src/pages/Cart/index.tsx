@@ -9,7 +9,6 @@ export function Cart() {
  
   return (
     <>
-      
       <ShoppingCart />
       <Footer />
     </>
