@@ -4,6 +4,7 @@ import { Header } from './components/Header';
 import { Routes } from './routes';
 import { GlobalStyle } from './styles/global';
 import { UserProvider } from './contextApi/UserProvider';
+import { AuthProvider } from './contextApi/AuthProvider';
 
 Modal.setAppElement('#root')
 
@@ -12,7 +13,9 @@ export function App() {
 
   return (
     <BrowserRouter>
+    <AuthProvider>
     <UserProvider>
+    
       <Header 
           onOpenNewRegisterModal={handleOpenNewRegisterModal}
           onOpenLoginModal={handleOpenLoginModal}
@@ -28,7 +31,7 @@ export function App() {
       <Routes />
       <GlobalStyle />
     </UserProvider>
+    </AuthProvider>
     </BrowserRouter>
-  
   );
 }
