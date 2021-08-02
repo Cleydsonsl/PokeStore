@@ -1,7 +1,7 @@
-import { Card, Container, Content, Grid, User } from './styles';
-import { FaUser, FaShoppingCart } from 'react-icons/fa';
+import { Card, Container, Content, Grid } from './styles';
 import { useEffect, useState } from 'react';
 import { api } from '../../services/api';
+import { useCart } from '../../hooks/useCart';
 
 interface IPokeProduct {
   id: number;
@@ -15,20 +15,45 @@ interface IPokeProduct {
   }
 }
 
-interface modalProps {
-  onOpenNewRegisterModal: () => void;
-  onOpenLoginModal: () => void;
+interface ProductFormatted extends IPokeProduct {
+  priceFormatted: string;
 }
 
-export function CardProduct({ onOpenNewRegisterModal, onOpenLoginModal }: modalProps) { 
+interface CartItemsAmount {
+  [key: number]: number;
+}
+
+export function CardProduct() { 
 
   const [ pokeCard, setPokeCard ] = useState<IPokeProduct[]>([])
-  const [ currentPage, setCurrentPage ] = useState(0);
+  const [ currentPage, setCurrentPage ] = useState(1);
+  // const [products, setProducts] = useState<ProductFormatted[]>([]);
+  // const { addProduct, cart } = useCart();
+
+  // const cartItemsAmount = cart.reduce((sumAmount, product) => {
+  //   const newSumAmount = {...sumAmount};
+  //   newSumAmount[product.id] = product.amount;
+
+  //   return newSumAmount;
+
+  // }, {} as CartItemsAmount);
+
+  // useEffect(() => {
+  //   async function loadProducts() {
+
+  //   }
+
+  //   loadProducts();
+  // }, []);
+
+  // function handleAddProduct(id: number) {
+  //   // TODO
+  // }
 
   useEffect(() => {
-    api.get(`/pokemon?_page=${currentPage}&_limit=12`)
-    .then(response => {setPokeCard(response.data)})
-    //.then((newPokes:void) => setPokeCard((prevPoke) => [...prevPoke, ...newPokes.]))
+    api.get<IPokeProduct[]>(`/pokemon?_page=${currentPage}&_limit=12`)
+    // .then(response => {setPokeCard(response.data)})
+    .then((newPokes) => setPokeCard((prevPoke) => [...prevPoke, ...newPokes.data]))
     .catch(err => console.log(err));
   }, [currentPage]);
 
@@ -46,35 +71,9 @@ export function CardProduct({ onOpenNewRegisterModal, onOpenLoginModal }: modalP
   }, []);
   
   return (
-    <>
-      
+    <>      
       <Container>
-        <User>
-            <div className="blue">
-              <div className="div">
-                <label>
-                  <input type="text" placeholder="Pesquisar" />
-                </label>
-              </div>
-              
-              <div className="users">
-                <div className="user">
-                  <FaUser className="FaUser"/> Faça seu <button type="button" 
-                    onClick={onOpenLoginModal}
-                  >
-                    Login
-                  </button> ou <button type="button" onClick={onOpenNewRegisterModal}>
-                    Cadastre-se
-                  </button>
-                </div>
-
-                <div className="car">
-                  <FaShoppingCart /> Seu carrinho tem <a href="#">0</a> produtos
-                </div>
-              </div>
-            </div>
-            
-          </User>
+        
         <Content>
           <Grid>
           { pokeCard.map(pokecard => (
