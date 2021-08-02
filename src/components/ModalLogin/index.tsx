@@ -2,7 +2,7 @@ import Modal from 'react-modal';
 import { GrClose } from 'react-icons/gr'
 import { Container } from './styles';
 import {useCallback, useContext} from 'react';
-import { useForm} from "react-hook-form";
+import { useForm} from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useHistory } from 'react-router-dom';
 import { AuthContext } from '../../contextApi/AuthProvider';
