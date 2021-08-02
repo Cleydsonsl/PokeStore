@@ -341,5 +341,69 @@
         "tp2": ""
       }
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "login": "teste",
+      "password": "teste",
+      "name": "teste",
+      "access_token": "liberado"
+    },
+    {
+      "name": "test",
+      "email": "test",
+      "password": "test",
+      "id": 2
+    },
+    {
+      "name": "CARLOS EDUARDO SANTIAGO PAIVA",
+      "email": "eduardok86@gmail.com",
+      "password": "123",
+      "confirmedPassword": "123",
+      "id": 3
+    },
+    {
+      "name": "teste 4",
+      "email": "email@gmail.com",
+      "password": "123",
+      "confirmedPassword": "123",
+      "id": 4
+    },
+    {
+      "name": "test3",
+      "email": "email@email.com",
+      "password": "1234",
+      "confirmedPassword": "1234",
+      "id": 5
+    },
+    {
+      "name": "test3",
+      "email": "email@email.com",
+      "password": "1234",
+      "confirmedPassword": "1234",
+      "id": 6
+    },
+    {
+      "name": "Carlos Eduardo",
+      "email": "eduardok86@gmail.com",
+      "password": "123",
+      "confirmedPassword": "123",
+      "id": 7
+    },
+    {
+      "name": "CARLOS EDUARDO SANTIAGO PAIVA",
+      "email": "eduardok86@gmail.com",
+      "password": "123",
+      "confirmedPassword": "123",
+      "id": 8
+    },
+    {
+      "name": "ultimo teste",
+      "email": "eduardok86@gmail.com",
+      "password": "123",
+      "confirmedPassword": "123",
+      "id": 9
+    }
   ]
 }

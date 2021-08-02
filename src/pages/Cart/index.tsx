@@ -6,10 +6,8 @@ Modal.setAppElement('#root')
 
 export function Cart() {
 
- 
   return (
     <>
-      
       <ShoppingCart />
       <Footer />
     </>
