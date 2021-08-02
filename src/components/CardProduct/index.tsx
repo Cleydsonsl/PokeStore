@@ -26,7 +26,7 @@ interface CartItemsAmount {
 export function CardProduct() { 
 
   const [ pokeCard, setPokeCard ] = useState<IPokeProduct[]>([])
-  const [ currentPage, setCurrentPage ] = useState(0);
+  const [ currentPage, setCurrentPage ] = useState(1);
   // const [products, setProducts] = useState<ProductFormatted[]>([]);
   // const { addProduct, cart } = useCart();
 
@@ -51,9 +51,9 @@ export function CardProduct() {
   // }
 
   useEffect(() => {
-    api.get(`/pokemon?_page=${currentPage}&_limit=12`)
-    .then(response => {setPokeCard(response.data)})
-    //.then((newPokes:void) => setPokeCard((prevPoke) => [...prevPoke, ...newPokes.]))
+    api.get<IPokeProduct[]>(`/pokemon?_page=${currentPage}&_limit=12`)
+    // .then(response => {setPokeCard(response.data)})
+    .then((newPokes) => setPokeCard((prevPoke) => [...prevPoke, ...newPokes.data]))
     .catch(err => console.log(err));
   }, [currentPage]);
 
