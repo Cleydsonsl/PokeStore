@@ -1,4 +1,8 @@
-import {FaFacebookSquare, FaInstagramSquare, FaTwitterSquare, FaYoutubeSquare} from 'react-icons/fa';
+import {	
+	FaFacebookSquare, 
+	FaInstagramSquare, 
+	FaTwitterSquare, 
+	FaYoutubeSquare } from 'react-icons/fa';
 import logowhite from '../../assets/logowhite.png';
 
 import {
