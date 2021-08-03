@@ -5,6 +5,7 @@ export function Profile() {
   
   return (
     <>
+      
       <ProfileComponent />
       <Footer />
     </>

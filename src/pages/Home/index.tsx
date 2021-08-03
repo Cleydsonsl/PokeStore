@@ -8,6 +8,8 @@ import { NewRegisterModal } from '../../components/NewRegisterModal';
 export function Home() {
   const [ isNewRegisterModalOpen, setIsNewRegisterModalOpen ] = useState(false);
   const [ isLoginModalOpen, setIsLoginModalOpen ] = useState(false);
+  
+  
 
   function handleOpenNewRegisterModal() {
     setIsNewRegisterModalOpen(true);
@@ -30,6 +32,7 @@ export function Home() {
       <HeaderFalse 
         onOpenNewRegisterModal={handleOpenNewRegisterModal}
         onOpenLoginModal={handleOpenLoginModal}
+        
       />
       <CardProduct/>
       <NewRegisterModal
