@@ -61,9 +61,17 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
 
   const removeProduct = (productId: number) => {
     try {
-      // TODO
-    } catch {
-      // TODO
+      const updatedCart = [...cart];
+      const productIndex = updatedCart.findIndex(product => product.id === productId);
+            
+      if(productIndex >= 0) {       
+      updatedCart.slice(productIndex, 1);
+      localStorage.setItem('@pokestore:cart', JSON.stringify(updatedCart))
+    } else {
+       throw Error();
+      }
+    }catch{
+      throw toast.error('Erro na remoção do produto');
     }
   };
 
@@ -72,9 +80,22 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
     amount,
   }: UpdateProductAmount) => {
     try {
-      // TODO
+      if (amount <= 0) {
+        return;
+      }
+
+      const updatedCart = [...cart];
+      const productExists = updatedCart.find(product => product.id === productId);
+
+      if(productExists) {
+        productExists.amount = amount;
+        setCart(updatedCart);
+        localStorage.setItem('@pokestore:cart', JSON.stringify(updatedCart))
+      } else{
+        throw Error();
+      }  
     } catch {
-      // TODO
+      toast.error('Erro na alteração de quantidade do produto');
     }
   };
 

@@ -7,7 +7,7 @@ interface IPokeProduct {
   id: number;
   name: string;
   desc: string;
-  price: string;
+  price: number;
   cardNumber: string;
   type: {
     tp1: string;
@@ -27,28 +27,28 @@ export function CardProduct() {
 
   const [ pokeCard, setPokeCard ] = useState<IPokeProduct[]>([])
   const [ currentPage, setCurrentPage ] = useState(1);
-  // const [products, setProducts] = useState<ProductFormatted[]>([]);
-  // const { addProduct, cart } = useCart();
+  const [products, setProducts] = useState<ProductFormatted[]>([]);
+  const { addProduct, cart } = useCart();
 
-  // const cartItemsAmount = cart.reduce((sumAmount, product) => {
-  //   const newSumAmount = {...sumAmount};
-  //   newSumAmount[product.id] = product.amount;
+  const cartItemsAmount = cart.reduce((sumAmount, product) => {
+  const newSumAmount = {...sumAmount};
+  newSumAmount[product.id] = product.amount;
 
-  //   return newSumAmount;
+  return newSumAmount;
 
-  // }, {} as CartItemsAmount);
+  }, {} as CartItemsAmount);
 
-  // useEffect(() => {
-  //   async function loadProducts() {
+  useEffect(() => {
+    async function loadProducts() {
 
-  //   }
+   }
 
-  //   loadProducts();
-  // }, []);
+   loadProducts();
+  }, []);
 
-  // function handleAddProduct(id: number) {
-  //   // TODO
-  // }
+  function handleAddProduct(id: number) {
+    addProduct(id);
+   }
 
   useEffect(() => {
     api.get<IPokeProduct[]>(`/pokemon?_page=${currentPage}&_limit=12`)
@@ -91,7 +91,7 @@ export function CardProduct() {
                 <p className="value">{pokecard.price}</p>
                 <p className="valuesec">,00</p>
               </div>
-              <button className="car" type="submit">ADICIONAR AO CARRINHO</button> 
+              <button className="car" type="submit" onClick={() => handleAddProduct(pokecard.id)}>ADICIONAR AO CARRINHO</button> 
             </Card>
             ))}
           </Grid>
