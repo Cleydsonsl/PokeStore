@@ -34,11 +34,13 @@ export function ProfileComponent() {
               <GrayLine/>
               <input placeholder="Sobrenome" id="sobrenome"></input>
               <GrayLine/>
+              <input placeholder="Data Nascimento" id="datanascimento"></input>
+              <GrayLine/>
               <input placeholder="E-mail" id="email"></input>
               <GrayLine/>
               <input placeholder="CPF" id="cpf"></input>
               <GrayLine/>
-              <input placeholder="Data Nascimento" id="datanascimento"></input>
+              
               <Salvar><h1>Salvar</h1></Salvar>
             </BlueBox>
          </RightColumn>

@@ -133,6 +133,11 @@ export const Card = styled.div`
     border-radius: 0.5rem;
     font-size: 1rem;
     font-weight: 800;
+
+    :hover{
+      background: ${mixins.colors.secondary};
+      color: ${mixins.colors.primary};
+    }
   }
 
 `

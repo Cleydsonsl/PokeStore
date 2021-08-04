@@ -102,6 +102,11 @@ export const WhiteBox = styled.div`
     font-size: xx-large;
     justify-content: space-around;
     color: ${mixins.colors.secondary};
+
+    :hover{
+      color: ${mixins.colors.primary};
+      cursor: pointer;
+    }
   }
 
   @media (max-width: 900px){
@@ -127,7 +132,7 @@ export const BlueBox = styled.div`
   justify-content: space-around;
 
   p{
-    font-size: xx-large;
+    font-size: x-large;
     justify-content: space-around;
     color: gray;
   }
@@ -141,7 +146,7 @@ export const BlueBox = styled.div`
   color: gray;
   opacity: 1;
   background-color: ${mixins.colors.secondary};
-  font-size: xx-large;
+  font-size: x-large;
   padding: 10px;
 }
   }
@@ -150,15 +155,15 @@ export const BlueBox = styled.div`
 export const GrayLine = styled.div`
   display: inline-block;
   border-top: 2px solid gray;
-  margin: 18px 0 18px 0;
+  margin: 15px 0 15px 0;
   width: 28rem;
 `;
 
 export const VerticalLine = styled.div`
   display: flex;  
-  border-left: 4px solid white;
-  margin: 20px;
-  height: 470px;
+  border-left: 3px solid white;
+  margin: 18px;
+  height: 570px;
 
   @media (max-width: 900px){
   border-left: 0;
@@ -167,7 +172,7 @@ export const VerticalLine = styled.div`
   }
 `;
 
-export const DadosPessoais = styled.button`
+export const DadosPessoais = styled.div`
   display: flex;  
   color: ${mixins.colors.secondary};
   background-color: white;
@@ -176,7 +181,7 @@ export const DadosPessoais = styled.button`
   margin: 0 0 50px 0;
   border-radius: 15px;
   border: none;
-  font-size: x-large;
+  font-size: large;
   padding: 10px;
   align-items: center;
   justify-content: center;
@@ -192,7 +197,7 @@ export const Salvar = styled.button`
   padding: 10px;
   border-radius: 15px;
   border: none;
-  font-size: large;
+  font-size: medium;
   align-items: center;
   justify-content: center;
 `;
