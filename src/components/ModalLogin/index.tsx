@@ -6,7 +6,7 @@ import { useForm} from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useHistory } from 'react-router-dom';
 import { AuthContext } from '../../contextApi/AuthProvider';
-import * as yup from "yup";
+import * as yup from 'yup';
 
 type Inputs = {
   email: string,
