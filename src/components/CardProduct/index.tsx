@@ -31,13 +31,13 @@ export function CardProduct() {
   const [products, setProducts] = useState<ProductFormatted[]>([]);
   const { addProduct, cart } = useCart();
 
-  const cartItemsAmount = cart.reduce((sumAmount, product) => {
+  /*const cartItemsAmount = cart.reduce((sumAmount, IPokeProduct) => {
   const newSumAmount = {...sumAmount};
-  newSumAmount[product.id] = product.amount;
+  newSumAmount[IPokeProduct.id] = IPokeProduct.amount;
 
   return newSumAmount;
 
-  }, {} as CartItemsAmount);
+  }, {} as CartItemsAmount);*/
 
   useEffect(() => {
     async function loadProducts() {

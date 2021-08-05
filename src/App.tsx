@@ -5,6 +5,8 @@ import { Routes } from './routes';
 import { GlobalStyle } from './styles/global';
 import { AuthProvider } from './contextApi/AuthProvider';
 import { UserProvider } from './contextApi/UserProvider';
+import { CartProvider } from './hooks/useCart';
+
 
 Modal.setAppElement('#root')
 
@@ -14,10 +16,14 @@ export function App() {
     <BrowserRouter>
       <AuthProvider>
         <UserProvider>
+          <CartProvider>
+          
+          
     
           <Header />
         
           <Routes />
+          </CartProvider>          
         </UserProvider>
       </AuthProvider>
       <GlobalStyle />

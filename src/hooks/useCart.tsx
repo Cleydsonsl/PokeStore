@@ -40,6 +40,7 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
       const currentAmount = productExists ? productExists.amount : 0;
       const amount = currentAmount + 1;
 
+     
       if(productExists) {
         productExists.amount = amount;
       } else {
@@ -66,12 +67,13 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
             
       if(productIndex >= 0) {       
       updatedCart.slice(productIndex, 1);
+      setCart(updatedCart);
       localStorage.setItem('@pokestore:cart', JSON.stringify(updatedCart))
     } else {
        throw Error();
       }
     }catch{
-      throw toast.error('Erro na remoção do produto');
+      throw toast.error('Erro na remoção do pokemon');
     }
   };
 
