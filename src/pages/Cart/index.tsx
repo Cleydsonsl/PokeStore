@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import Modal from 'react-modal';
-import { Header } from '../../components/Header';
 import { ShoppingCart } from '../../components/shoppingCart'
 import { Footer } from '../../components/Footer';
 import { NewRegisterModal } from '../../components/NewRegisterModal';
@@ -29,10 +28,7 @@ export function Cart() {
   }
   return (
     <>
-      <Header 
-        onOpenNewRegisterModal={handleOpenNewRegisterModal}
-        onOpenLoginModal={handleOpenLoginModal}
-      />
+     
       <NewRegisterModal
         isOpen={isNewRegisterModalOpen}
         onRequestClose={handleCloseNewRegisterModal}
