@@ -1,4 +1,4 @@
-export interface IPokeProduct {
+export interface Product {
   id: number;
   name: string;
   desc: string;
@@ -9,4 +9,10 @@ export interface IPokeProduct {
     tp1: string;
     tp2?: string;
   }
+}
+
+
+export interface Stock {
+  id: number;
+  amount: number;
 }

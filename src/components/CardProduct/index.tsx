@@ -39,26 +39,26 @@ export function CardProduct() {
 
   }, {} as CartItemsAmount);*/
 
-  useEffect(() => {
-    async function loadProducts() {
-      const response = await api.get<IPokeProduct[]>('pokemon');
+  // useEffect(() => {
+  //   async function loadProducts() {
+  //     const response = await api.get<IPokeProduct[]>('pokemon');
 
-      const data = response.data.map(IPokeProduct => ({ 
-        ...IPokeProduct, 
-        priceFormatted: formatPrice(IPokeProduct.price)
-      }))
+  //     const data = response.data.map(IPokeProduct => ({ 
+  //       ...IPokeProduct, 
+  //       priceFormatted: formatPrice(IPokeProduct.price)
+  //     }))
 
-   }
+  //  }
 
-   loadProducts();
-  }, []);
+  //  loadProducts();
+  // }, []);
 
   function handleAddProduct(id: number) {
     addProduct(id);
    }
 
   useEffect(() => {
-    api.get<IPokeProduct[]>(`/pokemon?_page=${currentPage}&_limit=12`)
+    api.get<IPokeProduct[]>(`/products?_page=${currentPage}&_limit=12`)
     // .then(response => {setPokeCard(response.data)})
     .then((newPokes) => setPokeCard((prevPoke) => [...prevPoke, ...newPokes.data]))
     .catch(err => console.log(err));

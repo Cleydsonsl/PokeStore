@@ -1,6 +1,5 @@
-import { Container, CartContainer, Content, Title, ButtonPrimario, ButtonSecundario, DivCep, DivCompra, ContainerCepCompra } from './styled';
+import { Container, Content, Title, ButtonPrimario, ButtonSecundario, DivCompra, ContainerCepCompra } from './styled';
 import Table from 'react-bootstrap/Table'
-import imgProduct from '../../assets/charmeleon.png'
 import { formatPrice } from '../../util/format';
 import { useCart } from '../../hooks/useCart';
 import {
@@ -9,25 +8,20 @@ import {
     MdRemoveCircleOutline,
   } from 'react-icons/md';
 
-interface IPokeProduct {
+interface Iproducts {
     id: number;
     name: string;
     desc: string;
     price: number;
     cardNumber: string;
     amount: number;
-    type: {
-        tp1: string;
-        tp2?: string;
-    }
 }
 
 export const ShoppingCart = (): JSX.Element => {
     const { cart, removeProduct, updateProductAmount } = useCart();
 
     const cartFormatted = cart.map(product => ({
-        ...product, priceFormatted: formatPrice(product.price), 
-        subtotal: formatPrice(product.price * product.amount)
+        ...product, priceFormatted: formatPrice(product.price), subtotal: formatPrice(product.price * product.amount)
     }))
     const total =
         formatPrice(
@@ -38,15 +32,15 @@ export const ShoppingCart = (): JSX.Element => {
             }, 0)
         )
 
-    function handleProductIncrement(product: IPokeProduct) {
+    function handleProductIncrement(product: Iproducts) {
         const IncrementArguments = {
             productId: product.id,
             amount: product.amount + 1
         }
-        updateProductAmount(IncrementArguments)
+        updateProductAmount(IncrementArguments)        
     }
 
-    function handleProductDecrement(product: IPokeProduct) {
+    function handleProductDecrement(product: Iproducts) {
         const IncrementArguments = {
             productId: product.id,
             amount: product.amount - 1
@@ -77,14 +71,16 @@ export const ShoppingCart = (): JSX.Element => {
                             {cartFormatted.map(product => (
                                 <tr data-testid="product" key={product.id}>
                                     <td>
-                                    <img src={`images/${product.id}.gif`} alt={product.name} />
+                                        <img src={`images/${product.id}.gif`} alt={product.name} />
                                         <p>{product.name}</p>
-                                        <p>{product.desc}</p>
                                     </td>
-                                    <td><p>{product.priceFormatted}</p></td>
                                     <td>
-                                        <div>
+                                        <p>{product.priceFormatted}</p>
+                                    </td>
+                                    <td>
+                                        <div className="qtdProduct">
                                             <button
+                                                className="btni"
                                                 type="button"
                                                 data-testid="decrement-product"
                                                 disabled={product.amount <= 1}
@@ -99,6 +95,7 @@ export const ShoppingCart = (): JSX.Element => {
                                                 value={product.amount}
                                             />
                                             <button
+                                                className="btnd"
                                                 type="button"
                                                 data-testid="increment-product"
                                                 onClick={() => handleProductIncrement(product)}
@@ -110,11 +107,12 @@ export const ShoppingCart = (): JSX.Element => {
                                     <td><p>{product.subtotal}</p></td>
                                     <td>
                                         <button
+                                            className="btnRemove"
                                             type="button"
                                             data-testid="remove-product"
                                             onClick={() => handleRemoveProduct(product.id)}
                                         >
-                                            <MdDelete size={20} />
+                                            <MdDelete className="iconRemove" size={20} />
                                         </button>
                                    </td>     
                                 </tr>
@@ -125,15 +123,9 @@ export const ShoppingCart = (): JSX.Element => {
                     <ButtonPrimario >Continuar Comprando</ButtonPrimario>
                     <ButtonSecundario >Cancelar Compra</ButtonSecundario>
                     <ContainerCepCompra>
-                        <DivCep>
-                            <h3>Informe seu cep para calcular o valor da entrega:</h3>
-                            <input placeholder="Cep"></input>
-                        </DivCep>
+                        
                         <DivCompra>
-                            
-                            <h3>valor total:</h3>
-                            <h3>{total}</h3>
-                            
+                            <h3>valor total: {total}</h3>
                             <button>Finalizar Compra</button>
                         </DivCompra>
                     </ContainerCepCompra>
