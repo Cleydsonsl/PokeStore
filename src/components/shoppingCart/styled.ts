@@ -167,3 +167,17 @@ export const ButtonSecundario = styled.button`
         color: #004278;
       
 `
+export const Total = styled.div`
+        display: flex;
+        align-items: baseline;  
+
+        span {
+          color: #999;
+          font-weight: bold;
+        }
+        
+        strong {
+          font-size: 28px;
+          margin-left: 5px;
+        }
+      `;

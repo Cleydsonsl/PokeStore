@@ -22,12 +22,11 @@ interface IPokeProduct {
     }
 }
 
-
 export const ShoppingCart = (): JSX.Element => {
     const { cart, removeProduct, updateProductAmount } = useCart();
 
-    const cartFormatted = cart.map(product => ({
-        ...product, priceFormatted: formatPrice(product.price), subtotal: formatPrice(product.price * product.amount)
+    const cartFormatted = cart.map(IPokeProduct => ({
+        ...IPokeProduct, priceFormatted: formatPrice(IPokeProduct.price), subtotal: formatPrice(IPokeProduct.price * IPokeProduct.amount)
     }))
     const total =
         formatPrice(
@@ -74,21 +73,21 @@ export const ShoppingCart = (): JSX.Element => {
                             </tr>
                         </thead>
                         <tbody>
-                            {cartFormatted.map(product => (
-                                <tr data-testid="product" key={product.id}>
+                            {cartFormatted.map(IPokeProduct => (
+                                <tr data-testid="product" key={IPokeProduct.id}>
                                     <td>
-                                        <img src={product.image} alt="imagem" />
-                                        <p>{product.name}</p>
-                                        <p>{product.desc}</p>
+                                    <img src={`images/${IPokeProduct.id}.gif`} alt={IPokeProduct.name} />
+                                        <p>{IPokeProduct.name}</p>
+                                        <p>{IPokeProduct.desc}</p>
                                     </td>
-                                    <td><p>{product.priceFormatted}</p></td>
+                                    <td><p>{IPokeProduct.priceFormatted}</p></td>
                                     <td>
                                         <div>
                                             <button
                                                 type="button"
                                                 data-testid="decrement-product"
-                                                disabled={product.amount <= 1}
-                                                onClick={() => handleProductDecrement(product)}
+                                                disabled={IPokeProduct.amount <= 1}
+                                                onClick={() => handleProductDecrement(IPokeProduct)}
                                             >
                                                 <MdRemoveCircleOutline size={20} />
                                             </button>
@@ -96,28 +95,29 @@ export const ShoppingCart = (): JSX.Element => {
                                                 type="text"
                                                 data-testid="product-amount"
                                                 readOnly
-                                                value={product.amount}
+                                                value={IPokeProduct.amount}
                                             />
                                             <button
                                                 type="button"
                                                 data-testid="increment-product"
-                                                onClick={() => handleProductIncrement(product)}
+                                                onClick={() => handleProductIncrement(IPokeProduct)}
                                             >
                                                 <MdAddCircleOutline size={20} />
                                             </button>
                                         </div>
                                     </td>
-                                    <td><p>{product.subtotal}</p></td>
+                                    <td><p>{IPokeProduct.subtotal}</p></td>
                                     <td>
                                         <button
                                             type="button"
                                             data-testid="remove-product"
-                                            onClick={() => handleRemoveProduct(product.id)}
+                                            onClick={() => handleRemoveProduct(IPokeProduct.id)}
                                         >
                                             <MdDelete size={20} />
                                         </button>
+                                   </td>     
                                 </tr>
-                                )}  
+                                ))}  
                         </tbody>
                     </Table>
                 </Content>
@@ -129,10 +129,10 @@ export const ShoppingCart = (): JSX.Element => {
                             <input placeholder="Cep"></input>
                         </DivCep>
                         <DivCompra>
-                            <total>
+                            
                             <h3>valor total:</h3>
                             <h3>{total}</h3>
-                            </total>
+                            
                             <button>Finalizar Compra</button>
                         </DivCompra>
                     </ContainerCepCompra>

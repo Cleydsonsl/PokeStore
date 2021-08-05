@@ -2,6 +2,7 @@ import { Card, Container, Content, Grid } from './styles';
 import { useEffect, useState } from 'react';
 import { api } from '../../services/api';
 import { useCart } from '../../hooks/useCart';
+import { formatPrice } from '../../util/format';
 
 interface IPokeProduct {
   id: number;
@@ -40,6 +41,12 @@ export function CardProduct() {
 
   useEffect(() => {
     async function loadProducts() {
+      const response = await api.get<IPokeProduct[]>('pokemon');
+
+      const data = response.data.map(IPokeProduct => ({ 
+        ...IPokeProduct, 
+        priceFormatted: formatPrice(IPokeProduct.price)
+      }))
 
    }
 

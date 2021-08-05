@@ -304,7 +304,7 @@
       "id": 26,
       "name": "Raichu",
       "desc": "Sua longa cauda serve de base para se proteger da alta tensão gerada por seu corpo.",
-      "price": 1.050.00,
+      "price": 1050.00,
       "cardNumber": "#026",
       "amount": 21,
       "type": {
@@ -364,7 +364,7 @@
       "id": 31,
       "name": "Nidoqueen",
       "desc": "Sua defesa se destaca pela capacidade ofensiva. Ele usa as escamas do corpo como uma couraça para proteger sua prole de qualquer ataque.",
-      "price": 1.000.00,
+      "price": 1000.00,
       "cardNumber": "#031",
       "amount": 41,
       "type": {
