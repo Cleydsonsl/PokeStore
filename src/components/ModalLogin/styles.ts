@@ -21,6 +21,7 @@ export const Container = styled.form`
     border-radius: 0.25rem;
     border: 1px solid ${mixins.colors.background};
     background: ${mixins.colors.background};
+    margin-bottom: 5px;
 
     font-weight: 400;
     font-size: 1rem;

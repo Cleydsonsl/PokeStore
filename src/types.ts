@@ -3,7 +3,7 @@ export interface IPokeProduct {
   name: string;
   desc: string;
   price: number;
-  cardNumber: string;
+  cardNumber: number;
   amount: number;
   type: {
     tp1: string;
