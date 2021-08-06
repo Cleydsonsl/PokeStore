@@ -41,10 +41,12 @@ export const Content = styled.div`
         .btni {
           border: none;
           margin-right: 0.5rem;
+          color: ${mixins.colors.secondary};
         }
         .btnd {
           border: none;
           margin-left: 0.5rem;
+          color: ${mixins.colors.secondary};
         }
       }
       
@@ -83,10 +85,10 @@ export const Content = styled.div`
         text-align: center;
         background: #DFDDDD;
         font-size: 20px;
-        color: #004278;
+        color: ${mixins.colors.secondary};
         border-radius: 10px;
-        border-color: #004278; 
-        border: 0.2rem solid #004278;
+        border-color: ${mixins.colors.secondary};
+        border: 0.2rem solid ${mixins.colors.secondary};
       }
 
       td {
