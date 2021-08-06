@@ -42,7 +42,7 @@ export const Grid = styled.div`
   grid-column-gap: 1.5rem;
   grid-row-gap: 1.5rem;
   
-  @media(max-width: 1360px) {
+  @media(max-width: 1366px) {
     grid-template-columns: repeat(3, 20rem);
   }
   @media(max-width: 1080px) {

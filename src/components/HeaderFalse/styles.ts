@@ -29,7 +29,7 @@ justify-content: space-around;
   justify-content: space-between;
   width: 1350px;
 
-  @media(max-width: 1350px) {
+  @media(max-width: 1366px) {
     width: 1000px;
   }
   @media(max-width: 1080px) {
