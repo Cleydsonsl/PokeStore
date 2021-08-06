@@ -25,10 +25,10 @@ interface CartItemsAmount {
 
 export function CardProduct() { 
 
-  const [ pokeCard, setPokeCard ] = useState<IPokeProduct[]>([])
+  const [ pokeCard, setPokeCard ] = useState<ProductFormatted[]>([])
   const [ currentPage, setCurrentPage ] = useState(1);
-  // const [products, setProducts] = useState<ProductFormatted[]>([]);
-  // const { addProduct, cart } = useCart();
+  // const [ products, setProducts ] = useState<ProductFormatted[]>([]);
+  const { addProduct, cart } = useCart();
 
   // const cartItemsAmount = cart.reduce((sumAmount, product) => {
   //   const newSumAmount = {...sumAmount};
@@ -51,8 +51,7 @@ export function CardProduct() {
   // }
 
   useEffect(() => {
-    api.get<IPokeProduct[]>(`/pokemon?_page=${currentPage}&_limit=12`)
-    // .then(response => {setPokeCard(response.data)})
+    api.get<ProductFormatted[]>(`/pokemon?_page=${currentPage}&_limit=12`)
     .then((newPokes) => setPokeCard((prevPoke) => [...prevPoke, ...newPokes.data]))
     .catch(err => console.log(err));
   }, [currentPage]);
@@ -69,6 +68,10 @@ export function CardProduct() {
 
     return () => intersectionObserver.disconnect()
   }, []);
+
+  function handleAddProduct(id: number) {
+    addProduct(id)
+  }
   
   return (
     <>      
@@ -91,7 +94,7 @@ export function CardProduct() {
                 <p className="value">{pokecard.price}</p>
                 <p className="valuesec">,00</p>
               </div>
-              <button className="car" type="submit">ADICIONAR AO CARRINHO</button> 
+              <button className="car" type="submit" onClick={() => handleAddProduct(pokecard.id)}>ADICIONAR AO CARRINHO</button> 
             </Card>
             ))}
           </Grid>
