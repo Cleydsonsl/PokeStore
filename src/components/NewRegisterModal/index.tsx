@@ -4,8 +4,8 @@ import { GrClose } from 'react-icons/gr'
 import { Container } from './styles';
 import { userContext } from '../../contextApi/UserProvider';
 import { useForm } from 'react-hook-form';
-import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
+import { yupResolver } from '@hookform/resolvers/yup';
 
 interface NewRegisterModalProps {
   isOpen: boolean;
@@ -35,7 +35,7 @@ export function NewRegisterModal({isOpen, onRequestClose}: NewRegisterModalProps
 
    async function onSubmit(data: Inputs) {
     console.log(data)
-    if(data.password != data.confirmedPassword) return
+    if(data.password !== data.confirmedPassword) return
     await createRegister(data)
 
   };
