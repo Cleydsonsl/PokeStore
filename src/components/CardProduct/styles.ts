@@ -134,9 +134,12 @@ export const Card = styled.div`
     font-size: 1rem;
     font-weight: 800;
 
+    transition: filter 0.2s;
+
     :hover{
       background: ${mixins.colors.secondary};
       color: ${mixins.colors.primary};
+      filter: brightness(0.8);
     }
   }
 

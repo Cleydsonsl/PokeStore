@@ -2,12 +2,13 @@ import { Card, Container, Content, Grid } from './styles';
 import { useEffect, useState } from 'react';
 import { api } from '../../services/api';
 import { useCart } from '../../hooks/useCart';
+import { formatPrice } from '../../util/format';
 
 interface IPokeProduct {
   id: number;
   name: string;
   desc: string;
-  price: string;
+  price: number;
   cardNumber: string;
   type: {
     tp1: string;
@@ -25,33 +26,38 @@ interface CartItemsAmount {
 
 export function CardProduct() { 
 
-  const [ pokeCard, setPokeCard ] = useState<ProductFormatted[]>([])
+  const [ pokeCard, setPokeCard ] = useState<IPokeProduct[]>([])
   const [ currentPage, setCurrentPage ] = useState(1);
-  // const [ products, setProducts ] = useState<ProductFormatted[]>([]);
+  const [products, setProducts] = useState<ProductFormatted[]>([]);
   const { addProduct, cart } = useCart();
 
-  // const cartItemsAmount = cart.reduce((sumAmount, product) => {
-  //   const newSumAmount = {...sumAmount};
-  //   newSumAmount[product.id] = product.amount;
-
-  //   return newSumAmount;
-
-  // }, {} as CartItemsAmount);
+  /*const cartItemsAmount = cart.reduce((sumAmount, IPokeProduct) => {
+  const newSumAmount = {...sumAmount};
+  newSumAmount[IPokeProduct.id] = IPokeProduct.amount;
+  return newSumAmount;
+  }, {} as CartItemsAmount);*/
 
   // useEffect(() => {
   //   async function loadProducts() {
+  //     const response = await api.get<IPokeProduct[]>('pokemon');
 
-  //   }
+  //     const data = response.data.map(IPokeProduct => ({ 
+  //       ...IPokeProduct, 
+  //       priceFormatted: formatPrice(IPokeProduct.price)
+  //     }))
 
-  //   loadProducts();
+  //  }
+
+  //  loadProducts();
   // }, []);
 
-  // function handleAddProduct(id: number) {
-  //   // TODO
-  // }
+  function handleAddProduct(id: number) {
+    addProduct(id);
+   }
 
   useEffect(() => {
-    api.get<ProductFormatted[]>(`/pokemon?_page=${currentPage}&_limit=12`)
+    api.get<IPokeProduct[]>(`/products?_page=${currentPage}&_limit=12`)
+    // .then(response => {setPokeCard(response.data)})
     .then((newPokes) => setPokeCard((prevPoke) => [...prevPoke, ...newPokes.data]))
     .catch(err => console.log(err));
   }, [currentPage]);
@@ -68,10 +74,6 @@ export function CardProduct() {
 
     return () => intersectionObserver.disconnect()
   }, []);
-
-  function handleAddProduct(id: number) {
-    addProduct(id)
-  }
   
   return (
     <>      

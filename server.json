@@ -1,36 +1,75 @@
 {
-  "pokemon":[
+  "stock": [
     {
       "id": 1,
-      "name":"Bulbasaur",
+      "amount": 3
+    },
+    {
+      "id": 2,
+      "amount": 5
+    },
+    {
+      "id": 3,
+      "amount": 2
+    },
+    {
+      "id": 4,
+      "amount": 1
+    },
+    {
+      "id": 5,
+      "amount": 5
+    },
+    {
+      "id": 6,
+      "amount": 10
+    },
+    {
+      "id": 7,
+      "amount": 10
+    },
+    {
+      "id": 8,
+      "amount": 10
+    },
+    {
+      "id": 9,
+      "amount": 10
+    },
+    {
+      "id": 10,
+      "amount": 10
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Bulbasaur",
       "desc": "Desde que nasce, ela cresce se alimentando dos nutrientes contidos na semente de suas costas.",
-      "price": "234",
+      "price": 234,
       "cardNumber": "#001",
-      "amount": 4,
       "type": {
         "tp1": "Planta",
         "tp2": "Venenoso"
       }
     },
     {
-    "id": 2,
-    "name":"Ivysaur",
-    "desc": "La luz del sol lo fortalece y hace que le crezca el capullo que tiene en el lomo.",
-    "price": "350",
-    "cardNumber": "#002",
-    "amount": 4,
-    "type": {
+      "id": 2,
+      "name": "Ivysaur",
+      "desc": "La luz del sol lo fortalece y hace que le crezca el capullo que tiene en el lomo.",
+      "price": 350,
+      "cardNumber": "#002",
+      "type": {
         "tp1": "Planta",
         "tp2": "Venenoso"
       }
     },
     {
       "id": 3,
-      "name":"Venusaur",
+      "name": "Venusaur",
       "desc": "A flor no dorso libera um aroma delicado, que tem efeito relaxante no combate.",
-      "price": "500",
+      "price": 500,
       "cardNumber": "#003",
-      "amount": 6,
       "type": {
         "tp1": "Planta",
         "tp2": "Venenoso"
@@ -38,11 +77,10 @@
     },
     {
       "id": 4,
-      "name":"Charmander",
+      "name": "Charmander",
       "desc": "Este Pokémon nasce com uma chama na ponta da cauda. Se fosse desligado, ele morreria.",
-      "price": "230",
+      "price": 230,
       "cardNumber": "#004",
-      "amount": 9,
       "type": {
         "tp1": "Fogo",
         "tp2": ""
@@ -50,11 +88,10 @@
     },
     {
       "id": 5,
-      "name":"Charmeleon",
+      "name": "Charmeleon",
       "desc": "Se exaltado em combate, ele envia chamas intensas que incineram tudo ao seu redor.",
-      "price": "420",
+      "price": 420,
       "cardNumber": "#005",
-      "amount": 6,
       "type": {
         "tp1": "Fogo",
         "tp2": ""
@@ -62,11 +99,10 @@
     },
     {
       "id": 6,
-      "name":"Charizard",
+      "name": "Charizard",
       "desc": "Suas asas poderosas permitem que ele voe a uma altura de 1.400 m. Ele cospe chamas que atingem temperaturas extremamente altas.",
-      "price": "860",
+      "price": 860,
       "cardNumber": "#006",
-      "amount": 3,
       "type": {
         "tp1": "Fogo",
         "tp2": "Voador"
@@ -74,11 +110,10 @@
     },
     {
       "id": 7,
-      "name":"Squirtle",
+      "name": "Squirtle",
       "desc": "Quando se sente em perigo, ele se esconde em sua concha e cospe jatos de água de sua boca.",
-      "price": "380",
+      "price": 380,
       "cardNumber": "#007",
-      "amount": 5,
       "type": {
         "tp1": "Água",
         "tp2": ""
@@ -86,11 +121,10 @@
     },
     {
       "id": 8,
-      "name":"Wartortle",
+      "name": "Wartortle",
       "desc": "É considerado um símbolo de longevidade. Os espécimes mais antigos apresentam musgo na concha.",
-      "price": "450",
+      "price": 450,
       "cardNumber": "#008",
-      "amount": 7,
       "type": {
         "tp1": "Água",
         "tp2": ""
@@ -98,11 +132,10 @@
     },
     {
       "id": 9,
-      "name":"Blastoise",
+      "name": "Blastoise",
       "desc": "Ele lança jatos de água através dos barris de sua concha, capazes de perfurar até mesmo o aço.",
-      "price": "920",
+      "price": 920,
       "cardNumber": "#009",
-      "amount": 11,
       "type": {
         "tp1": "Água",
         "tp2": ""
@@ -110,11 +143,10 @@
     },
     {
       "id": 10,
-      "name":"Caterpie",
+      "name": "Caterpie",
       "desc": "Suas pernas curtas são cobertas por ventosas que lhe permitem escalar paredes e encostas sem descanso.",
-      "price": "220",
+      "price": 220,
       "cardNumber": "#010",
-      "amount": 15,
       "type": {
         "tp1": "Inseto",
         "tp2": ""
@@ -122,11 +154,10 @@
     },
     {
       "id": 11,
-      "name":"Metapod",
+      "name": "Metapod",
       "desc": "Embora tenha uma casca muito dura, tem um corpo bastante macio. Um ataque violento pode matá-lo.",
-      "price": "410",
+      "price": 410,
       "cardNumber": "#011",
-      "amount": 8,
       "type": {
         "tp1": "Inseto",
         "tp2": ""
@@ -134,11 +165,10 @@
     },
     {
       "id": 12,
-      "name":"Butterfree",
+      "name": "Butterfree",
       "desc": "Ele coleta o néctar diariamente e o prende aos pelos das pernas para levá-lo ao ninho.",
-      "price": "580",
+      "price": 580,
       "cardNumber": "#012",
-      "amount": 5,
       "type": {
         "tp1": "Inseto",
         "tp2": "Voador"
@@ -146,11 +176,10 @@
     },
     {
       "id": 13,
-      "name":"Weedle",
+      "name": "Weedle",
       "desc": "O ferrão na cabeça é muito pontudo. Alimenta-se de folhas escondidas nas densas florestas e prados.",
-      "price": "260",
+      "price": 260,
       "cardNumber": "#013",
-      "amount": 10,
       "type": {
         "tp1": "Inseto",
         "tp2": "Venenoso"
@@ -158,11 +187,10 @@
     },
     {
       "id": 14,
-      "name":"Kakuna",
+      "name": "Kakuna",
       "desc": "Embora seja quase incapaz de se mover, quando ameaçado pode envenenar os inimigos com seu ferrão.",
-      "price": "370",
+      "price": 370,
       "cardNumber": "#014",
-      "amount": 9,
       "type": {
         "tp1": "Inseto",
         "tp2": "Venenoso"
@@ -170,11 +198,10 @@
     },
     {
       "id": 15,
-      "name":"Beedrill",
+      "name": "Beedrill",
       "desc": "Tem três ferrões venenosos, dois nas patas dianteiras e um na parte inferior do abdômen, com os quais ataca seus inimigos continuamente.",
-      "price": "540",
+      "price": 540,
       "cardNumber": "#015",
-      "amount": 13,
       "type": {
         "tp1": "Insector",
         "tp2": "Venenoso"
@@ -182,11 +209,10 @@
     },
     {
       "id": 16,
-      "name":"Pidgey",
+      "name": "Pidgey",
       "desc": "Sua docilidade é tal que tendem a se defender chutando a areia em vez de contra-atacar.",
-      "price": "270",
+      "price": 270,
       "cardNumber": "#016",
-      "amount": 22,
       "type": {
         "tp1": "Normal",
         "tp2": "Voador"
@@ -194,11 +220,10 @@
     },
     {
       "id": 17,
-      "name":"Pidgeotto",
+      "name": "Pidgeotto",
       "desc": "A sua extraordinária vitalidade e resistência permitem-lhe percorrer grandes distâncias do território que habita em busca de presas.",
-      "price": "420",
+      "price": 420,
       "cardNumber": "#017",
-      "amount": 19,
       "type": {
         "tp1": "Normal",
         "tp2": "Voador"
@@ -206,11 +231,10 @@
     },
     {
       "id": 18,
-      "name":"Pidgeot",
+      "name": "Pidgeot",
       "desc": "Este Pokémon voa a uma velocidade de mach 2 em busca de uma presa. Suas grandes garras são armas muito perigosas.",
-      "price": "620",
+      "price": 260,
       "cardNumber": "#018",
-      "amount": 17,
       "type": {
         "tp1": "Normal",
         "tp2": "Voador"
@@ -218,11 +242,10 @@
     },
     {
       "id": 19,
-      "name":"Rattata",
+      "name": "Rattata",
       "desc": "Ele está propenso a cravar seus incisivos em qualquer coisa que cruze em seu caminho. Se algum for visto, provavelmente há quarenta por perto.",
-      "price": "255",
+      "price": 255,
       "cardNumber": "#019",
-      "amount": 8,
       "type": {
         "tp1": "Normal",
         "tp2": ""
@@ -230,11 +253,10 @@
     },
     {
       "id": 20,
-      "name":"Raticate",
+      "name": "Raticate",
       "desc": "Graças às pequenas membranas nas patas traseiras, ele pode nadar pelos rios para capturar suas presas.",
-      "price": "470",
+      "price": 470,
       "cardNumber": "#020",
-      "amount": 5,
       "type": {
         "tp1": "Normal",
         "tp2": ""
@@ -242,11 +264,10 @@
     },
     {
       "id": 21,
-      "name":"Spearow",
+      "name": "Spearow",
       "desc": "Quando se trata de proteger seu território, ele compensa sua incapacidade de voar alto com velocidade incrível.",
-      "price": "305",
+      "price": 305,
       "cardNumber": "#021",
-      "amount": 15,
       "type": {
         "tp1": "Normal",
         "tp2": "Voador"
@@ -254,11 +275,10 @@
     },
     {
       "id": 22,
-      "name":"Fearow",
+      "name": "Fearow",
       "desc": "Este Pokémon existe desde os tempos antigos. Ao menor sinal de perigo, ele levanta vôo e foge.",
-      "price": "720",
+      "price": 720,
       "cardNumber": "#022",
-      "amount": 11,
       "type": {
         "tp1": "Normal",
         "tp2": "Voador"
@@ -266,11 +286,10 @@
     },
     {
       "id": 23,
-      "name":"Ekans",
+      "name": "Ekans",
       "desc": "A duração deste Pokémon aumenta com o tempo. À noite, ele se enrola nos galhos das árvores para descansar.",
-      "price": "360",
+      "price": 360,
       "cardNumber": "#023",
-      "amount": 3,
       "type": {
         "tp1": "Venenoso",
         "tp2": ""
@@ -278,11 +297,10 @@
     },
     {
       "id": 24,
-      "name":"Arbok",
+      "name": "Arbok",
       "desc": "Até seis variações diferentes dos padrões escabrosos em sua pele foram identificadas.",
-      "price": "810",
+      "price": 810,
       "cardNumber": "#024",
-      "amount": 5,
       "type": {
         "tp1": "Venenoso",
         "tp2": ""
@@ -290,11 +308,10 @@
     },
     {
       "id": 25,
-      "name":"Pikachu",
+      "name": "Pikachu",
       "desc": "Quanto mais poderosa a energia elétrica que esse Pokémon gera, mais macias e elásticas se tornam as bolsas nas bochechas.",
-      "price": "705",
+      "price": 705,
       "cardNumber": "#025",
-      "amount": 10,
       "type": {
         "tp1": "Elétrico",
         "tp2": ""
@@ -302,11 +319,10 @@
     },
     {
       "id": 26,
-      "name":"Raichu",
+      "name": "Raichu",
       "desc": "Sua longa cauda serve de base para se proteger da alta tensão gerada por seu corpo.",
-      "price": "1.050",
+      "price": 1050,
       "cardNumber": "#026",
-      "amount": 21,
       "type": {
         "tp1": "Elétrico",
         "tp2": ""
@@ -314,11 +330,10 @@
     },
     {
       "id": 27,
-      "name":"Sandshrew",
+      "name": "Sandshrew",
       "desc": "Ele gosta de rolar na areia seca para remover todos os vestígios de sujeira e umidade da pele.",
-      "price": "506",
+      "price": 506,
       "cardNumber": "#027",
-      "amount": 4,
       "type": {
         "tp1": "Terra",
         "tp2": ""
@@ -326,11 +341,10 @@
     },
     {
       "id": 28,
-      "name":"Sandslash",
+      "name": "Sandslash",
       "desc": "Quanto mais seco o terreno em que habita, mais duros e lisos se tornam os espinhos que cobrem suas costas.",
-      "price": "860",
+      "price": 860,
       "cardNumber": "#028",
-      "amount": 18,
       "type": {
         "tp1": "Terra",
         "tp2": ""
@@ -338,11 +352,10 @@
     },
     {
       "id": 29,
-      "name":"Nidoran F",
+      "name": "Nidoran F",
       "desc": "Ele corta as frutas com seus incisivos duros para comê-las. A ponta do chifre das mulheres é mais arredondada do que a dos homens.",
-      "price": "500",
+      "price": 500,
       "cardNumber": "#029",
-      "amount": 15,
       "type": {
         "tp1": "Venenoso",
         "tp2": ""
@@ -350,11 +363,10 @@
     },
     {
       "id": 30,
-      "name":"Nidorina",
+      "name": "Nidorina",
       "desc": "Acredita-se que o chifre em sua testa tenha sido atrofiado para evitar ferir seus filhotes durante a alimentação.",
-      "price": "680",
+      "price": 680,
       "cardNumber": "#030",
-      "amount": 55,
       "type": {
         "tp1": "Venenoso",
         "tp2": ""
@@ -362,11 +374,10 @@
     },
     {
       "id": 31,
-      "name":"Nidoqueen",
+      "name": "Nidoqueen",
       "desc": "Sua defesa se destaca pela capacidade ofensiva. Ele usa as escamas do corpo como uma couraça para proteger sua prole de qualquer ataque.",
-      "price": "1.000",
+      "price": 1000,
       "cardNumber": "#031",
-      "amount": 41,
       "type": {
         "tp1": "Venenoso",
         "tp2": "Terra"
@@ -374,11 +385,10 @@
     },
     {
       "id": 32,
-      "name":"Nidoran M",
+      "name": "Nidoran M",
       "desc": "Ele mantém as orelhas grandes levantadas, sempre alerta. Se sentir perigo, ele ataca inoculando uma toxina potente com seu chifre frontal.",
-      "price": "500",
+      "price": 500,
       "cardNumber": "#032",
-      "amount": 32,
       "type": {
         "tp1": "Venenoso",
         "tp2": ""
@@ -386,11 +396,10 @@
     },
     {
       "id": 33,
-      "name":"Nidorino",
+      "name": "Nidorino",
       "desc": "Aonde quer que vá, ele quebra pedras com seu chifre, mais duro que um diamante, em busca de uma Pedra da Lua.",
-      "price": "650",
+      "price": 650,
       "cardNumber": "#033",
-      "amount": 16,
       "type": {
         "tp1": "Terra",
         "tp2": ""
@@ -398,11 +407,10 @@
     },
     {
       "id": 34,
-      "name":"Nidoking",
+      "name": "Nidoking",
       "desc": "Uma vez que ele fica descontrolado, não há ninguém para detê-lo. Ele apenas se acalma antes de Nidoqueen, seu companheiro de toda a vida.",
-      "price": "800",
+      "price": 800,
       "cardNumber": "#034",
-      "amount": 8,
       "type": {
         "tp1": "Terra",
         "tp2": ""
@@ -410,11 +418,10 @@
     },
     {
       "id": 35,
-      "name":"Clefairy",
+      "name": "Clefairy",
       "desc": "Diz-se que a felicidade virá para quem vê um grupo de Clefairy dançando à luz da lua cheia.",
-      "price": "750",
+      "price": 750,
       "cardNumber": "#035",
-      "amount": 11,
       "type": {
         "tp1": "Hada",
         "tp2": ""
@@ -422,11 +429,10 @@
     },
     {
       "id": 36,
-      "name":"Clefable",
+      "name": "Clefable",
       "desc": "Este Pokémon de aparência fada, raramente visto por humanos, corre para se esconder quando detecta que alguém está por perto.",
-      "price": "890",
+      "price": 890,
       "cardNumber": "#036",
-      "amount": 5,
       "type": {
         "tp1": "Hada",
         "tp2": ""
@@ -434,11 +440,10 @@
     },
     {
       "id": 37,
-      "name":"Vulpix",
+      "name": "Vulpix",
       "desc": "Quando criança, tem seis caudas de grande beleza. À medida que cresce, mais vai sair.",
-      "price": "510",
+      "price": 510,
       "cardNumber": "#037",
-      "amount": 7,
       "type": {
         "tp1": "Fogo",
         "tp2": ""
@@ -446,11 +451,10 @@
     },
     {
       "id": 38,
-      "name":"Ninetales",
+      "name": "Ninetales",
       "desc": "Dizem que pode viver até mil anos e que cada uma das caudas tem poderes sobrenaturais.",
-      "price": "710",
+      "price": 710,
       "cardNumber": "#038",
-      "amount": 35,
       "type": {
         "tp1": "Fogo",
         "tp2": ""
@@ -458,11 +462,10 @@
     },
     {
       "id": 39,
-      "name":"Jigglypuff",
+      "name": "Jigglypuff",
       "desc": "Sua capacidade pulmonar é excepcional, mesmo para um Pokémon. Ele é capaz de cantar canções de ninar incessantemente até que seu rival adormece.",
-      "price": "710",
+      "price": 710,
       "cardNumber": "#039",
-      "amount": 23,
       "type": {
         "tp1": "Hada",
         "tp2": ""
@@ -470,11 +473,10 @@
     },
     {
       "id": 40,
-      "name":"Wigglytuff",
+      "name": "Wigglytuff",
       "desc": "Quanto mais ar você inala, mais ele aumenta de tamanho. Se ele fica com raiva, ele incha seu corpo a fim de intimidar seu oponente",
-      "price": "910",
+      "price": 910,
       "cardNumber": "#040",
-      "amount": 10,
       "type": {
         "tp1": "Hada",
         "tp2": ""
@@ -482,11 +484,10 @@
     },
     {
       "id": 41,
-      "name":"Zubat",
+      "name": "Zubat",
       "desc": "Ele emite ondas ultrassônicas pela boca para escanear os arredores, permitindo que voe habilmente por cavernas estreitas.",
-      "price": "500",
+      "price": 500,
       "cardNumber": "#041",
-      "amount": 26,
       "type": {
         "tp1": "Veneno",
         "tp2": ""
@@ -494,11 +495,10 @@
     },
     {
       "id": 42,
-      "name":"Golbat",
+      "name": "Golbat",
       "desc": "Ele adora sugar o sangue de seres vivos. Às vezes, ele compartilha a preciosa coleção com outros membros da mesma espécie.",
-      "price": "680",
+      "price": 680,
       "cardNumber": "#042",
-      "amount": 6,
       "type": {
         "tp1": "Veneno",
         "tp2": ""
@@ -506,11 +506,10 @@
     },
     {
       "id": 43,
-      "name":"Oddish",
+      "name": "Oddish",
       "desc": "Ele se move quando exposto ao luar. Ele ronda à noite para espalhar suas sementes.",
-      "price": "490",
+      "price": 490,
       "cardNumber": "#043",
-      "amount": 13,
       "type": {
         "tp1": "Veneno",
         "tp2": ""
@@ -518,11 +517,10 @@
     },
     {
       "id": 44,
-      "name":"Gloom ",
+      "name": "Gloom ",
       "desc": "Libera um odor fétido de pistilos. O fedor forte nocauteia qualquer pessoa em um raio de 2 km.",
-      "price": "600",
+      "price": 600,
       "cardNumber": "#044",
-      "amount": 37,
       "type": {
         "tp1": "Veneno",
         "tp2": ""
@@ -530,11 +528,10 @@
     },
     {
       "id": 45,
-      "name":"Vileplume ",
+      "name": "Vileplume ",
       "desc": "Possui as maiores pétalas do mundo. Ao caminhar, densas nuvens de pólen tóxico são liberadas deles.",
-      "price": "810",
+      "price": 810,
       "cardNumber": "#045",
-      "amount": 49,
       "type": {
         "tp1": "Veneno",
         "tp2": ""
@@ -542,11 +539,10 @@
     },
     {
       "id": 46,
-      "name":"Paras",
+      "name": "Paras",
       "desc": "Ele cava o solo para extrair nutrientes das raízes das árvores, que são então absorvidos quase completamente pelos cogumelos no dorso.",
-      "price": "480",
+      "price": 480,
       "cardNumber": "#046",
-      "amount": 53,
       "type": {
         "tp1": "Bicho",
         "tp2": "Planta"
@@ -554,11 +550,10 @@
     },
     {
       "id": 47,
-      "name":"Parasect",
+      "name": "Parasect",
       "desc": "Depois de muito tempo absorvendo a energia do hospedeiro, o cogumelo parasita nas costas é o que parece controlar a vontade deste Pokémon.",
-      "price": "680",
+      "price": 680,
       "cardNumber": "#047",
-      "amount": 67,
       "type": {
         "tp1": "Bicho",
         "tp2": "Planta"
@@ -566,11 +561,10 @@
     },
     {
       "id": 48,
-      "name":"Venonat",
+      "name": "Venonat",
       "desc": "Seus olhos grandes agem como radares. Em ampla luz percebe-se que são, na verdade, grupos de olhos minúsculos.",
-      "price": "510",
+      "price": 510,
       "cardNumber": "#048",
-      "amount": 75,
       "type": {
         "tp1": "Bicho",
         "tp2": "Veneno"
@@ -578,11 +572,10 @@
     },
     {
       "id": 49,
-      "name":"Venomoth",
+      "name": "Venomoth",
       "desc": "As asas emitem um pó de escamas impregnado de toxinas que gruda em contato e é difícil de remover.",
-      "price": "730",
+      "price": 730,
       "cardNumber": "#049",
-      "amount": 63,
       "type": {
         "tp1": "Bicho",
         "tp2": "Veneno"
@@ -590,11 +583,10 @@
     },
     {
       "id": 50,
-      "name":"Diglett",
+      "name": "Diglett",
       "desc": "Si un Diglett excava un terreno, lo deja perfectamente arado y preparado para sembrarlo.",
-      "price": "480",
+      "price": 480,
       "cardNumber": "#050",
-      "amount": 48,
       "type": {
         "tp1": "Água",
         "tp2": "Planta"
@@ -602,11 +594,10 @@
     },
     {
       "id": 51,
-      "name":"Dugtrio ",
+      "name": "Dugtrio ",
       "desc": "Um trio Diglett. Causa enormes terremotos ao cavar no subsolo a profundidades de até 100 km.",
-      "price": "710",
+      "price": 710,
       "cardNumber": "#051",
-      "amount": 51,
       "type": {
         "tp1": "Terra",
         "tp2": ""
@@ -614,11 +605,10 @@
     },
     {
       "id": 52,
-      "name":"Meowth",
+      "name": "Meowth",
       "desc": "Ele adora colecionar objetos brilhantes. Quando está de bom humor, ele até mostra a coleção para o seu Trainer.",
-      "price": "540",
+      "price": 540,
       "cardNumber": "#052",
-      "amount": 17,
       "type": {
         "tp1": "Normal",
         "tp2": ""
@@ -626,11 +616,10 @@
     },
     {
       "id": 53,
-      "name":"Persian",
+      "name": "Persian",
       "desc": "Tornar-se amigo deste Pokémon é uma tarefa difícil devido ao seu enorme orgulho. Quando algo não lhe agradar, remova as unhas imediatamente.",
-      "price": "840",
+      "price": 840,
       "cardNumber": "#053",
-      "amount": 91,
       "type": {
         "tp1": "Normal",
         "tp2": ""
@@ -638,11 +627,10 @@
     },
     {
       "id": 54,
-      "name":"Psyduck",
+      "name": "Psyduck",
       "desc": "Ele sempre sofre de dores de cabeça. Depois de liberar seus misteriosos poderes, a dor de cabeça diminui por alguns momentos.",
-      "price": "460",
+      "price": 460,
       "cardNumber": "#054",
-      "amount": 28,
       "type": {
         "tp1": "Água",
         "tp2": ""
@@ -650,11 +638,10 @@
     },
     {
       "id": 55,
-      "name":"Golduck",
+      "name": "Golduck",
       "desc": "Vive em rios com águas plácidas. Seus membros longos permitem que ele nade graciosamente.",
-      "price": "690",
+      "price": 690,
       "cardNumber": "#055",
-      "amount": 33,
       "type": {
         "tp1": "Água",
         "tp2": ""
@@ -662,11 +649,10 @@
     },
     {
       "id": 56,
-      "name":"Mankey",
+      "name": "Mankey",
       "desc": "Este ágil Pokémon vive em árvores. Ele fica com raiva facilmente e quando o faz, ele ataca tudo ao seu redor.",
-      "price": "510",
+      "price": 510,
       "cardNumber": "#056",
-      "amount": 55,
       "type": {
         "tp1": "Luta",
         "tp2": ""
@@ -674,11 +660,10 @@
     },
     {
       "id": 57,
-      "name":"Primeape",
+      "name": "Primeape",
       "desc": "Ele só se acalma quando não há ninguém por perto, então chegar a esse momento é realmente difícil.",
-      "price": "710",
+      "price": 710,
       "cardNumber": "#057",
-      "amount": 87,
       "type": {
         "tp1": "Luta",
         "tp2": ""
@@ -686,11 +671,10 @@
     },
     {
       "id": 58,
-      "name":"Growlithe",
+      "name": "Growlithe",
       "desc": "Corajoso e honrado por natureza, ele enfrenta destemidamente inimigos maiores e mais fortes.",
-      "price": "515",
+      "price": 515,
       "cardNumber": "#058",
-      "amount": 77,
       "type": {
         "tp1": "Fogo",
         "tp2": ""
@@ -698,11 +682,10 @@
     },
     {
       "id": 59,
-      "name":"Arcanine",
+      "name": "Arcanine",
       "desc": "Es capaz de correr 10 000 km al día, lo que deja embelesados a todos los que lo ven pasar.",
-      "price": "730",
+      "price": 730,
       "cardNumber": "#059",
-      "amount": 95,
       "type": {
         "tp1": "Fogo",
         "tp2": ""
@@ -710,11 +693,10 @@
     },
     {
       "id": 60,
-      "name":"Poliwag ",
+      "name": "Poliwag ",
       "desc": "É mais ágil na água do que na terra. A espiral de seu ventre nada mais é do que parte de suas vísceras que podem ser vistas através da pele.",
-      "price": "450",
+      "price": 450,
       "cardNumber": "#060",
-      "amount": 48,
       "type": {
         "tp1": "Água",
         "tp2": ""
@@ -722,11 +704,10 @@
     },
     {
       "id": 61,
-      "name":"Poliwhirl",
+      "name": "Poliwhirl",
       "desc": "Olhar para a espiral da barriga causa sonolência, por isso pode ser usado como uma alternativa às canções de ninar para fazer as crianças dormirem.",
-      "price": "650",
+      "price": 650,
       "cardNumber": "#061",
-      "amount": 85,
       "type": {
         "tp1": "Água",
         "tp2": ""
@@ -734,11 +715,10 @@
     },
     {
       "id": 62,
-      "name":"Poliwrath ",
+      "name": "Poliwrath ",
       "desc": "Seu corpo é puro músculo. Ele consegue fazer seu caminho através de águas geladas, quebrando o gelo com seus braços fortes.",
-      "price": "850",
-      "cardNumber": "#06274",
-      "amount": 74,
+      "price": 850,
+      "cardNumber": "#062",
       "type": {
         "tp1": "Água",
         "tp2": "Terra"
@@ -746,11 +726,10 @@
     },
     {
       "id": 63,
-      "name":"Abra",
+      "name": "Abra",
       "desc": "Ele é capaz de usar seus poderes psíquicos mesmo durante o sono. Aparentemente, o conteúdo do sonho influencia suas faculdades.",
-      "price": "510",
+      "price": 510,
       "cardNumber": "#063",
-      "amount": 39,
       "type": {
         "tp1": "Psiquico",
         "tp2": ""
@@ -758,11 +737,10 @@
     },
     {
       "id": 64,
-      "name":"Kadabra",
+      "name": "Kadabra",
       "desc": "Ele dorme suspenso no ar graças a seus poderes psíquicos. A cauda, ​​de extraordinária flexibilidade, funciona como travesseiro",
-      "price": "710",
+      "price": 710,
       "cardNumber": "#059",
-      "amount": 28,
       "type": {
         "tp1": "Psiquico",
         "tp2": ""
@@ -770,11 +748,10 @@
     },
     {
       "id": 65,
-      "name":"Alakazam",
+      "name": "Alakazam",
       "desc": "Ele tem uma capacidade intelectual incomum que lhe permite lembrar tudo o que aconteceu desde o momento de seu nascimento.",
-      "price": "910",
+      "price": 910,
       "cardNumber": "#065",
-      "amount": 85,
       "type": {
         "tp1": "Psiquico",
         "tp2": ""
@@ -782,11 +759,10 @@
     },
     {
       "id": 66,
-      "name":"Machop",
+      "name": "Machop",
       "desc": "É uma massa de músculos e, apesar de seu pequeno tamanho, tem força de sobra para levantar 100 pessoas em seus braços.",
-      "price": "490",
+      "price": 490,
       "cardNumber": "#066",
-      "amount": 97,
       "type": {
         "tp1": "Luta",
         "tp2": ""
@@ -794,11 +770,10 @@
     },
     {
       "id": 67,
-      "name":"Machoke",
+      "name": "Machoke",
       "desc": "Seu corpo musculoso é tão forte que ele usa um cinto anti-força para controlar seus movimentos.",
-      "price": "605",
+      "price": 605,
       "cardNumber": "#067",
-      "amount": 30,
       "type": {
         "tp1": "Luta",
         "tp2": ""
@@ -806,11 +781,10 @@
     },
     {
       "id": 68,
-      "name":"Machamp",
+      "name": "Machamp",
       "desc": "Ele move rapidamente todos os quatro braços para desferir socos implacáveis ​​e socos de todos os ângulos.",
-      "price": "820",
+      "price": 820,
       "cardNumber": "#068",
-      "amount": 93,
       "type": {
         "tp1": "Luta",
         "tp2": ""
@@ -818,11 +792,10 @@
     },
     {
       "id": 69,
-      "name":"Bellsprout",
+      "name": "Bellsprout",
       "desc": "Prefere locais quentes e úmidos. Pegue pequenos insetos Pokémon com suas lianas para devorá-los.",
-      "price": "490",
+      "price": 490,
       "cardNumber": "#069",
-      "amount": 69,
       "type": {
         "tp1": "Veneno",
         "tp2": ""
@@ -830,11 +803,10 @@
     },
     {
       "id": 70,
-      "name":"Weepinbell",
+      "name": "Weepinbell",
       "desc": "Quando está com fome, engole tudo que se move. A pobre presa acaba dissolvida em seus ácidos.",
-      "price": "680",
+      "price": 680,
       "cardNumber": "#070",
-      "amount": 82,
       "type": {
         "tp1": "Veneno",
         "tp2": ""
@@ -842,11 +814,10 @@
     },
     {
       "id": 71,
-      "name":"Victreebel",
+      "name": "Victreebel",
       "desc": "Atrai suas presas com um aroma doce de mel. Depois de pego na boca, ele se dissolve em apenas um dia, inclusive os ossos.",
-      "price": "860",
+      "price": 860,
       "cardNumber": "#071",
-      "amount": 49,
       "type": {
         "tp1": "Veneno",
         "tp2": ""
@@ -854,11 +825,10 @@
     },
     {
       "id": 72,
-      "name":"Tentacool",
+      "name": "Tentacool",
       "desc": "Suas faculdades de natação são bastante precárias, então ele se limita a flutuar à deriva em águas rasas em busca de alimento.",
-      "price": "490",
+      "price": 490,
       "cardNumber": "#072",
-      "amount": 37,
       "type": {
         "tp1": "Agua",
         "tp2": "Veneno"
@@ -866,11 +836,10 @@
     },
     {
       "id": 73,
-      "name":"Tentacruel",
+      "name": "Tentacruel",
       "desc": "Se as esferas vermelhas de cada lado de sua cabeça brilharem intensamente, isso indica que ele está prestes a lançar ondas ultrassônicas.",
-      "price": "715",
+      "price": 715,
       "cardNumber": "#073",
-      "amount": 59,
       "type": {
         "tp1": "Água",
         "tp2": "Veneno"
@@ -878,11 +847,10 @@
     },
     {
       "id": 74,
-      "name":"Geodude",
+      "name": "Geodude",
       "desc": "Geralmente é encontrado em trilhas de montanha e lugares semelhantes. Tenha cuidado para não pisar acidentalmente e provocar sua raiva.",
-      "price": "440",
+      "price": 440,
       "cardNumber": "#074",
-      "amount": 43,
       "type": {
         "tp1": "Rocha",
         "tp2": "Terra"
@@ -890,11 +858,10 @@
     },
     {
       "id": 75,
-      "name":"Graveler",
+      "name": "Graveler",
       "desc": "Ele é freqüentemente visto rolando montanha abaixo. Não evita obstáculos, mas passa por cima deles.",
-      "price": "640",
+      "price": 640,
       "cardNumber": "#075",
-      "amount": 99,
       "type": {
         "tp1": "Rocha",
         "tp2": "Terra"
@@ -902,11 +869,10 @@
     },
     {
       "id": 76,
-      "name":"Golem",
+      "name": "Golem",
       "desc": "Assim que você muda de pele, seu corpo fica macio e esbranquiçado, mas endurece logo após entrar em contato com o ar.",
-      "price": "840",
+      "price": 840,
       "cardNumber": "#076",
-      "amount": 51,
       "type": {
         "tp1": "Rocha",
         "tp2": "Terra"
@@ -914,11 +880,10 @@
     },
     {
       "id": 77,
-      "name":"Ponyta",
+      "name": "Ponyta",
       "desc": "Ao nascer é um pouco lento, mas aos poucos fortalece suas pernas ao competir com seus pares.",
-      "price": "510",
+      "price": 410,
       "cardNumber": "#077",
-      "amount": 77,
       "type": {
         "tp1": "Fogo",
         "tp2": ""
@@ -926,11 +891,10 @@
     },
     {
       "id": 78,
-      "name":"Rapidash",
+      "name": "Rapidash",
       "desc": "Sua juba ígnea balança ao vento enquanto atravessa vastos prados a uma velocidade de 240 km / h.",
-      "price": "730",
+      "price": 730,
       "cardNumber": "#078",
-      "amount": 85,
       "type": {
         "tp1": "Fogo",
         "tp2": ""
@@ -938,11 +902,10 @@
     },
     {
       "id": 79,
-      "name":"Slowpoke",
+      "name": "Slowpoke",
       "desc": "É lento e abstrato. Embora seu rabo esteja comido, ele nem percebe, pois não sente nenhuma dor. Você também não percebe quando ele volta a crescer.",
-      "price": "490",
+      "price": 490,
       "cardNumber": "#079",
-      "amount": 66,
       "type": {
         "tp1": "Água",
         "tp2": "Psiquico"
@@ -950,11 +913,10 @@
     },
     {
       "id": 80,
-      "name":"Slowbro",
+      "name": "Slowbro",
       "desc": "Ele evoluiu após ser mordido por um Shellder, que fica encantado com a substância que secreta pela cauda.",
-      "price": "670",
+      "price": 670,
       "cardNumber": "#080",
-      "amount": 38,
       "type": {
         "tp1": "Água",
         "tp2": "Psiquico"
@@ -962,11 +924,10 @@
     },
     {
       "id": 81,
-      "name":"Magnemite ",
+      "name": "Magnemite ",
       "desc": "Às vezes, eles caem no chão após esgotar sua fonte de alimentação interna, mas uma pequena bateria é o suficiente para reanimá-los.",
-      "price": "480",
+      "price": 480,
       "cardNumber": "#081",
-      "amount": 64,
       "type": {
         "tp1": "Elétrico",
         "tp2": ""
@@ -974,9 +935,9 @@
     },
     {
       "id": 82,
-      "name":"Magneton",
+      "name": "Magneton",
       "desc": "Este Pokémon, surgido da união de três Magnemite, gera ondas de rádio poderosas com as quais examina o ambiente.",
-      "price": "670",
+      "price": 670,
       "cardNumber": "#082",
       "amount": 49,
       "type": {
@@ -986,11 +947,10 @@
     },
     {
       "id": 83,
-      "name":"Farfetch'd",
+      "name": "Farfetch'd",
       "desc": "Ele brande o alho-poró que segura com uma asa como se fosse uma espada para cortar seu rival. Em apuros, ele come para se alimentar.",
-      "price": "665",
+      "price": 665,
       "cardNumber": "#083",
-      "amount": 73,
       "type": {
         "tp1": "Normal",
         "tp2": ""
@@ -998,11 +958,10 @@
     },
     {
       "id": 84,
-      "name":"Doduo",
+      "name": "Doduo",
       "desc": "As pequenas asas mal permitem que ele voe, mas ele pode correr em alta velocidade graças às suas pernas superdesenvolvidas.",
-      "price": "520",
+      "price": 520,
       "cardNumber": "#084",
-      "amount": 68,
       "type": {
         "tp1": "Normal",
         "tp2": ""
@@ -1010,11 +969,10 @@
     },
     {
       "id": 85,
-      "name":"Dodrio",
+      "name": "Dodrio",
       "desc": "Este Pokémon surge quando uma das cabeças de Doduo é dividida. É capaz de percorrer prados a 60 km / h.",
-      "price": "680",
+      "price": 680,
       "cardNumber": "#085",
-      "amount": 51,
       "type": {
         "tp1": "Normal",
         "tp2": ""
@@ -1022,11 +980,10 @@
     },
     {
       "id": 86,
-      "name":"Seel",
+      "name": "Seel",
       "desc": "Ele adora lugares gelados e gosta de nadar em águas com temperaturas em torno de -10 ºC.",
-      "price": "520",
+      "price": 520,
       "cardNumber": "#086",
-      "amount": 49,
       "type": {
         "tp1": "Água",
         "tp2": ""
@@ -1034,11 +991,10 @@
     },
     {
       "id": 87,
-      "name":"Dewgong",
+      "name": "Dewgong",
       "desc": "Seu corpo está branco como a neve. Pode nadar pacificamente em mares gelados, graças à sua resistência ao frio.",
-      "price": "740",
+      "price": 740,
       "cardNumber": "#087",
-      "amount": 25,
       "type": {
         "tp1": "Água",
         "tp2": "Gelo"
@@ -1046,11 +1002,10 @@
     },
     {
       "id": 88,
-      "name":"Grimer",
+      "name": "Grimer",
       "desc": "É feito de lama endurecida. Poucos se atrevem a tocá-lo devido ao seu fedor e composição nociva. Por onde passa, a grama não cresce.",
-      "price": "525",
+      "price": 525,
       "cardNumber": "#088",
-      "amount": 88,
       "type": {
         "tp1": "Venenoso",
         "tp2": ""
@@ -1058,11 +1013,10 @@
     },
     {
       "id": 89,
-      "name":"Muk",
+      "name": "Muk",
       "desc": "O cheiro é tão ruim que pode fazer você desmaiar. Seu nariz ficou tão atrofiado que ele perdeu completamente o olfato.",
-      "price": "720",
+      "price": 720,
       "cardNumber": "#089",
-      "amount": 64,
       "type": {
         "tp1": "Venenoso",
         "tp2": ""
@@ -1070,11 +1024,10 @@
     },
     {
       "id": 90,
-      "name":"Shellder",
+      "name": "Shellder",
       "desc": "Nada para trás abrindo e fechando sua concha. É surpreendentemente rápido.",
-      "price": "495",
+      "price": 495,
       "cardNumber": "#090",
-      "amount": 44,
       "type": {
         "tp1": "Água",
         "tp2": ""
@@ -1082,11 +1035,10 @@
     },
     {
       "id": 91,
-      "name":"Cloyster",
+      "name": "Cloyster",
       "desc": "O casco que o cobre é extremamente duro, a ponto de nem mesmo uma bomba pode destruí-lo. Ele só abre quando ataca.",
-      "price": "775",
+      "price": 775,
       "cardNumber": "#091",
-      "amount": 19,
       "type": {
         "tp1": "Água",
         "tp2": "Gelo"
@@ -1094,11 +1046,10 @@
     },
     {
       "id": 92,
-      "name":"Gastly",
+      "name": "Gastly",
       "desc": "Ele nasceu de gases venenosos que sufocariam qualquer pessoa envolvida neles.",
-      "price": "490",
+      "price": 490,
       "cardNumber": "#092",
-      "amount": 47,
       "type": {
         "tp1": "Fantasma",
         "tp2": "Venenoso"
@@ -1106,11 +1057,10 @@
     },
     {
       "id": 93,
-      "name":"Haunter",
+      "name": "Haunter",
       "desc": "Sua língua é feita de gás. Se lamber sua vítima, sofrerá tremores constantes até a morte.",
-      "price": "680",
+      "price": 680,
       "cardNumber": "#093",
-      "amount": 68,
       "type": {
         "tp1": "Fantasma",
         "tp2": "Venenoso"
@@ -1118,11 +1068,10 @@
     },
     {
       "id": 94,
-      "name":"Gengar",
+      "name": "Gengar",
       "desc": "Nas noites de lua cheia, este Pokémon gosta de imitar as sombras das pessoas e zombar de seus medos.",
-      "price": "870",
+      "price": 870,
       "cardNumber": "#094",
-      "amount": 43,
       "type": {
         "tp1": "Fantasma",
         "tp2": "Venenoso"
@@ -1130,11 +1079,10 @@
     },
     {
       "id": 95,
-      "name":"Onix",
+      "name": "Onix",
       "desc": "À medida que segue seu caminho no subsolo, ele absorve tudo o que encontra. Isso torna seu corpo tão sólido.",
-      "price": "510",
+      "price": 510,
       "cardNumber": "#095",
-      "amount": 88,
       "type": {
         "tp1": "Rochoso",
         "tp2": "Terra"
@@ -1142,11 +1090,10 @@
     },
     {
       "id": 96,
-      "name":"Drowzee",
+      "name": "Drowzee",
       "desc": "Se ele sempre dormir na companhia de um Pokémon desta espécie, pode mostrar sonhos que já ingeriu antes.",
-      "price": "495",
+      "price": 495,
       "cardNumber": "#096",
-      "amount": 29,
       "type": {
         "tp1": "Psiquico",
         "tp2": ""
@@ -1154,11 +1101,10 @@
     },
     {
       "id": 97,
-      "name":"Hypno",
+      "name": "Hypno",
       "desc": "É aconselhável evitar o contato visual ao encontrar este Pokémon, pois ele pode hipnotizar com seu pêndulo.",
-      "price": "705",
+      "price": 705,
       "cardNumber": "#097",
-      "amount": 67,
       "type": {
         "tp1": "Psiquico",
         "tp2": ""
@@ -1166,11 +1112,10 @@
     },
     {
       "id": 98,
-      "name":"Krabby",
+      "name": "Krabby",
       "desc": "É fácil encontrá-lo perto do mar. As pinças compridas voltam a crescer se forem removidas do lugar.",
-      "price": "470",
+      "price": 470,
       "cardNumber": "#098",
-      "amount": 57,
       "type": {
         "tp1": "Água",
         "tp2": ""
@@ -1178,11 +1123,10 @@
     },
     {
       "id": 99,
-      "name":"Kingler",
+      "name": "Kingler",
       "desc": "Sua grande garra tem uma força de 10.000 cv, mas é difícil de mover devido ao seu grande tamanho.",
-      "price": "650",
+      "price": 650,
       "cardNumber": "#099",
-      "amount": 15,
       "type": {
         "tp1": "Água",
         "tp2": ""
@@ -1190,11 +1134,10 @@
     },
     {
       "id": 100,
-      "name":"Voltorb",
+      "name": "Voltorb",
       "desc": "Diz-se que se disfarça de Pokébola. Ao menor estímulo, ele se autodestruirá.",
-      "price": "510",
+      "price": 510,
       "cardNumber": "#100",
-      "amount": 12,
       "type": {
         "tp1": "Elétrico",
         "tp2": ""
@@ -1202,11 +1145,10 @@
     },
     {
       "id": 101,
-      "name":"Electrode",
+      "name": "Electrode",
       "desc": "Ele armazena tanta energia elétrica em seu corpo que o menor impacto pode causar uma grande explosão.",
-      "price": "730",
+      "price": 730,
       "cardNumber": "#101",
-      "amount": 18,
       "type": {
         "tp1": "Elétrico",
         "tp2": ""
@@ -1214,11 +1156,10 @@
     },
     {
       "id": 102,
-      "name":"Exeggcute",
+      "name": "Exeggcute",
       "desc": "Apesar da aparência de um mero abacaxi com ovos, é um Pokémon. Aparentemente, suas cabeças se comunicam por telepatia.",
-      "price": "510",
+      "price": 510,
       "cardNumber": "#102",
-      "amount": 35,
       "type": {
         "tp1": "Planta",
         "tp2": "Psiquico"
@@ -1226,11 +1167,10 @@
     },
     {
       "id": 103,
-      "name":"Exeggutor",
+      "name": "Exeggutor",
       "desc": "Cada uma das três cabeças pensa de forma independente e mostra pouco interesse nas demais.",
-      "price": "740",
+      "price": 740,
       "cardNumber": "#103",
-      "amount": 56,
       "type": {
         "tp1": "Planta",
         "tp2": "Psiquico"
@@ -1238,11 +1178,10 @@
     },
     {
       "id": 104,
-      "name":"Cubone",
+      "name": "Cubone",
       "desc": "Quando ele chora ao lembrar de sua falecida mãe, seu grito ecoa no crânio em sua cabeça.",
-      "price": "490",
+      "price": 490,
       "cardNumber": "#104",
-      "amount": 26,
       "type": {
         "tp1": "Terra",
         "tp2": ""
@@ -1250,11 +1189,10 @@
     },
     {
       "id": 105,
-      "name":"Marowak",
+      "name": "Marowak",
       "desc": "Ele evoluiu depois de fortalecer e superar sua dor. Agora luta com ousadia brandindo seu osso como arma.",
-      "price": "720",
+      "price": 720,
       "cardNumber": "#105",
-      "amount": 40,
       "type": {
         "tp1": "Terra",
         "tp2": ""
@@ -1262,11 +1200,10 @@
     },
     {
       "id": 106,
-      "name":"Hitmonlee",
+      "name": "Hitmonlee",
       "desc": "Este Pokémon tem um incrível senso de equilíbrio. Ele pode chutar de qualquer posição.",
-      "price": "680",
+      "price": 680,
       "cardNumber": "#106",
-      "amount": 62,
       "type": {
         "tp1": "Luta",
         "tp2": ""
@@ -1274,11 +1211,10 @@
     },
     {
       "id": 107,
-      "name":"Hitmonchan",
+      "name": "Hitmonchan",
       "desc": "Seus socos cortaram o ar. Eles são tão rápidos que o menor toque pode causar queimaduras.",
-      "price": "710",
+      "price": 710,
       "cardNumber": "#107",
-      "amount": 87,
       "type": {
         "tp1": "Luta",
         "tp2": ""
@@ -1286,11 +1222,10 @@
     },
     {
       "id": 108,
-      "name":"Lickitung",
+      "name": "Lickitung",
       "desc": "Se suas lambidas não forem tratadas a tempo, sua saliva pegajosa e ardente pode causar coceira persistente.",
-      "price": "520",
+      "price": 520,
       "cardNumber": "#108",
-      "amount": 89,
       "type": {
         "tp1": "Luta",
         "tp2": ""
@@ -1298,11 +1233,10 @@
     },
     {
       "id": 109,
-      "name":"Koffing",
+      "name": "Koffing",
       "desc": "Seu corpo está transbordando de gás venenoso. Ele vai para aterros, atraído pelo odor pútrido que emana dos resíduos.",
-      "price": "475",
+      "price": 475,
       "cardNumber": "#109",
-      "amount": 62,
       "type": {
         "tp1": "Venenoso",
         "tp2": ""
@@ -1310,11 +1244,10 @@
     },
     {
       "id": 110,
-      "name":"Weezing",
+      "name": "Weezing",
       "desc": "Ele usa ambos os seus corpos para misturar gases. Aparentemente, no passado, espécimes podiam ser encontrados em todos os cantos de Galar.",
-      "price": "750",
+      "price": 750,
       "cardNumber": "#110",
-      "amount": 94,
       "type": {
         "tp1": "Venenoso",
         "tp2": ""
@@ -1322,11 +1255,10 @@
     },
     {
       "id": 111,
-      "name":"Rhyhorn",
+      "name": "Rhyhorn",
       "desc": "Sua inteligência é limitada, embora ele tenha uma força considerável que lhe permite derrubar arranha-céus apenas batendo neles.",
-      "price": "510",
+      "price": 510,
       "cardNumber": "#111",
-      "amount": 11,
       "type": {
         "tp1": "Rochoso",
         "tp2": "Terra"
@@ -1334,11 +1266,10 @@
     },
     {
       "id": 112,
-      "name":"Rhydon",
+      "name": "Rhydon",
       "desc": "Quando evolui, começa a andar sobre as patas traseiras. É capaz de perfurar rochas com o chifre que possui.",
-      "price": "500",
+      "price": 500,
       "cardNumber": "#112",
-      "amount": 14,
       "type": {
         "tp1": "Rochoso",
         "tp2": "Terra"
@@ -1346,11 +1277,10 @@
     },
     {
       "id": 113,
-      "name":"Chansey",
+      "name": "Chansey",
       "desc": "Os ovos que Chansey põe têm alto valor nutritivo e um sabor requintado. Eles são considerados uma iguaria.",
-      "price": "690",
+      "price": 690,
       "cardNumber": "#113",
-      "amount": 27,
       "type": {
         "tp1": "Normal",
         "tp2": ""
@@ -1358,11 +1288,10 @@
     },
     {
       "id": 114,
-      "name":"Tangela",
+      "name": "Tangela",
       "desc": "Suas vinhas não param de crescer, mesmo que se quebrem. Ainda não se sabe como seria sem eles.",
-      "price": "520",
+      "price": 520,
       "cardNumber": "#114",
-      "amount": 69,
       "type": {
         "tp1": "Planta",
         "tp2": ""
@@ -1370,11 +1299,10 @@
     },
     {
       "id": 115,
-      "name":"Kangaskhan",
+      "name": "Kangaskhan",
       "desc": "Mesmo que carregue um bebê na bolsa, seu trabalho com os pés não perde a leveza. Domine seu oponente com rajadas de socos ágeis.",
-      "price": "630",
+      "price": 630,
       "cardNumber": "#115",
-      "amount": 17,
       "type": {
         "tp1": "Normal",
         "tp2": ""
@@ -1382,11 +1310,10 @@
     },
     {
       "id": 116,
-      "name":"Horsea",
+      "name": "Horsea",
       "desc": "Vive em águas calmas. Se se sentir em perigo, expelirá uma tinta preta densa pela boca para poder fugir.",
-      "price": "440",
+      "price": 440,
       "cardNumber": "#116",
-      "amount": 16,
       "type": {
         "tp1": "Água",
         "tp2": ""
@@ -1394,11 +1321,10 @@
     },
     {
       "id": 117,
-      "name":"Seadra",
+      "name": "Seadra",
       "desc": "Nesta espécie, é o macho quem cuida da prole. Durante a época de reprodução, o veneno das pontas em seu dorso torna-se mais poderoso.",
-      "price": "620",
+      "price": 620,
       "cardNumber": "#117",
-      "amount": 43,
       "type": {
         "tp1": "Água",
         "tp2": ""
@@ -1406,11 +1332,10 @@
     },
     {
       "id": 118,
-      "name":"Goldeen",
+      "name": "Goldeen",
       "desc": "Suas barbatanas peitorais, da cauda e dorsais ondulam graciosamente na água. É por isso que ele é chamado de Dançarino da Água.",
-      "price": "470",
+      "price": 470,
       "cardNumber": "#118",
-      "amount": 53,
       "type": {
         "tp1": "Água",
         "tp2": ""
@@ -1418,11 +1343,10 @@
     },
     {
       "id": 119,
-      "name":"Seaking",
+      "name": "Seaking",
       "desc": "No outono ela ganha peso para atrair parceiros em potencial e fica coberta de cores brilhantes.",
-      "price": "640",
+      "price": 640,
       "cardNumber": "#119",
-      "amount": 44,
       "type": {
         "tp1": "Água",
         "tp2": ""
@@ -1430,11 +1354,10 @@
     },
     {
       "id": 120,
-      "name":"Staryu",
+      "name": "Staryu",
       "desc": "No final do verão, grupos de Staryu podem ser vistos na costa da praia sincronizando o brilho de seus núcleos em uma taxa regular.",
-      "price": "420",
+      "price": 420,
       "cardNumber": "#120",
-      "amount": 73,
       "type": {
         "tp1": "Água",
         "tp2": ""
@@ -1442,11 +1365,10 @@
     },
     {
       "id": 121,
-      "name":"Starmie",
+      "name": "Starmie",
       "desc": "Seu órgão central, conhecido como núcleo, brilha com as cores do arco-íris enquanto se prepara para liberar seus poderosos poderes psíquicos.",
-      "price": "615",
+      "price": 615,
       "cardNumber": "#121",
-      "amount": 95,
       "type": {
         "tp1": "Água",
         "tp2": "Psiquico"
@@ -1454,11 +1376,10 @@
     },
     {
       "id": 122,
-      "name":"Mr. Mime",
+      "name": "Mr. Mime",
       "desc": "Muitos estudiosos argumentam que o desenvolvimento de suas mãos enormes se deve à sua ânsia de praticar pantomima.",
-      "price": "675",
+      "price": 675,
       "cardNumber": "#122",
-      "amount": 83,
       "type": {
         "tp1": "Psiquico",
         "tp2": "Hada"
@@ -1466,11 +1387,10 @@
     },
     {
       "id": 123,
-      "name":"Scyther",
+      "name": "Scyther",
       "desc": "Suas foices ficam mais afiadas a cada luta. É capaz de fatiar toras grossas com um único corte.",
-      "price": "560",
+      "price": 560,
       "cardNumber": "#123",
-      "amount": 51,
       "type": {
         "tp1": "Bicho",
         "tp2": ""
@@ -1478,11 +1398,10 @@
     },
     {
       "id": 124,
-      "name":"Jynx",
+      "name": "Jynx",
       "desc": "Em certa parte de Galar Jynx era conhecida como a Rainha do Gelo e reverenciada com certo medo.",
-      "price": "610",
+      "price": 610,
       "cardNumber": "#124",
-      "amount": 46,
       "type": {
         "tp1": "Gelo",
         "tp2": "Psiquico"
@@ -1490,11 +1409,10 @@
     },
     {
       "id": 125,
-      "name":"Electabuzz",
+      "name": "Electabuzz",
       "desc": "É comum que usinas de energia tenham Pokémon do tipo Terra para lidar com Electabuzz faminto por eletricidade.",
-      "price": "590",
+      "price": 590,
       "cardNumber": "#125",
-      "amount": 84,
       "type": {
         "tp1": "Elétrico",
         "tp2": ""
@@ -1502,11 +1420,10 @@
     },
     {
       "id": 126,
-      "name":"Magmar",
+      "name": "Magmar",
       "desc": "Ele mata suas presas com as chamas que gera e muitas vezes acaba reduzindo-as a carvão por acidente.",
-      "price": "615",
+      "price": 615,
       "cardNumber": "#126",
-      "amount": 37,
       "type": {
         "tp1": "Fogo",
         "tp2": ""
@@ -1514,11 +1431,10 @@
     },
     {
       "id": 127,
-      "name":"Pinsir",
+      "name": "Pinsir",
       "desc": "Os Pinsir julgam uns aos outros pela robustez dos chifres. Quanto mais imponente você for, mais agradará seus semelhantes do sexo oposto.",
-      "price": "585",
+      "price": 585,
       "cardNumber": "#127",
-      "amount": 68,
       "type": {
         "tp1": "Bicho",
         "tp2": ""
@@ -1526,11 +1442,10 @@
     },
     {
       "id": 128,
-      "name":"Tauros",
+      "name": "Tauros",
       "desc": "Cuidado se começar a se chicotear com a cauda, ​​pois é sinal de que vai carregar na velocidade máxima.",
-      "price": "625",
-      "cardNumber": "#128", 
-      "amount": 67,      
+      "price": 625,
+      "cardNumber": "#128",
       "type": {
         "tp1": "Normal",
         "tp2": ""
@@ -1538,11 +1453,10 @@
     },
     {
       "id": 129,
-      "name":"Magikarp",
+      "name": "Magikarp",
       "desc": "É o Pokémon mais fraco e patético que existe, com força e velocidade praticamente zero.",
-      "price": "510",
+      "price": 510,
       "cardNumber": "#129",
-       "amount": 56,
       "type": {
         "tp1": "Água",
         "tp2": ""
@@ -1550,11 +1464,10 @@
     },
     {
       "id": 130,
-      "name":"Gyarados",
+      "name": "Gyarados",
       "desc": "Ele é excessivamente agressivo. O Hyper Beam que dispara de sua boca reduz tudo o que encontra a cinzas.",
-      "price": "720",
+      "price": 720,
       "cardNumber": "#130",
-       "amount": 86,
       "type": {
         "tp1": "Água",
         "tp2": ""
@@ -1562,11 +1475,10 @@
     },
     {
       "id": 131,
-      "name":"Lapras",
+      "name": "Lapras",
       "desc": "Este Pokémon tem inteligência notável e um coração de ouro. Cante uma canção melodiosa enquanto navega no mar.",
-      "price": "695",
+      "price": 695,
       "cardNumber": "#131",
-       "amount": 68,
       "type": {
         "tp1": "Água",
         "tp2": "Gelo"
@@ -1574,11 +1486,10 @@
     },
     {
       "id": 132,
-      "name":"Ditto",
+      "name": "Ditto",
       "desc": "Ele redistribui as células de seu corpo para assumir a aparência do que vê, mas retorna ao normal quando ele relaxa.",
-      "price": "560",
+      "price": 560,
       "cardNumber": "#132",
-       "amount": 83,
       "type": {
         "tp1": "Normal",
         "tp2": ""
@@ -1586,11 +1497,10 @@
     },
     {
       "id": 133,
-      "name":"Eevee",
+      "name": "Eevee",
       "desc": "É capaz de alterar a composição de seu corpo para se adaptar ao meio ambiente.",
-      "price": "430",
+      "price": 430,
       "cardNumber": "#133",
-       "amount": 90,
       "type": {
         "tp1": "Normal",
         "tp2": ""
@@ -1598,11 +1508,10 @@
     },
     {
       "id": 134,
-      "name":"Vaporeon",
+      "name": "Vaporeon",
       "desc": "Quando as barbatanas de Vaporeon começam a vibrar, isso significa que vai chover nas próximas horas.",
-      "price": "640",
+      "price": 640,
       "cardNumber": "#134",
-       "amount": 70,
       "type": {
         "tp1": "Água",
         "tp2": ""
@@ -1610,11 +1519,10 @@
     },
     {
       "id": 135,
-      "name":"Jolteon",
+      "name": "Jolteon",
       "desc": "Se ele ficar com raiva ou com medo, sua pele eriçará. Cada um de seus cabelos se torna uma farpa afiada que rasga o rival em pedaços.",
-      "price": "635",
+      "price": 635,
       "cardNumber": "#135",
-       "amount": 73,
       "type": {
         "tp1": "Água",
         "tp2": ""
@@ -1622,11 +1530,10 @@
     },
     {
       "id": 136,
-      "name":"Flareon",
+      "name": "Flareon",
       "desc": "Uma vez armazenado o calor suficiente, pode atingir a temperatura de 900 ºC.",
-      "price": "640",
+      "price": 640,
       "cardNumber": "#136",
-       "amount": 45,
       "type": {
         "tp1": "Fogo",
         "tp2": ""
@@ -1634,11 +1541,10 @@
     },
     {
       "id": 137,
-      "name":"Porygon",
+      "name": "Porygon",
       "desc": "É o primeiro Pokémon do mundo criado a partir de códigos de programação graças ao uso de tecnologia de ponta.",
-      "price": "485",
+      "price": 485,
       "cardNumber": "#137",
-       "amount": 78,
       "type": {
         "tp1": "Normal",
         "tp2": ""
@@ -1646,11 +1552,10 @@
     },
     {
       "id": 138,
-      "name":"Omanyte",
+      "name": "Omanyte",
       "desc": "Varios ejemplares han escapado o bien han sido liberados tras su restauración, lo que comienza a suscitar una serie de problemas.",
-      "price": "450",
+      "price": 450,
       "cardNumber": "#138",
-       "amount": 67,
       "type": {
         "tp1": "Rochoso",
         "tp2": "Água"
@@ -1658,11 +1563,10 @@
     },
     {
       "id": 139,
-      "name":"Omastar",
+      "name": "Omastar",
       "desc": "Acredita-se que tenha se extinguido porque o tamanho e peso excessivos de sua concha o impediam de se mover rapidamente para capturar suas presas.",
-      "price": "590",
+      "price": 590,
       "cardNumber": "#139",
-       "amount": 69,
       "type": {
         "tp1": "Rochoso",
         "tp2": "Água"
@@ -1670,11 +1574,10 @@
     },
     {
       "id": 140,
-      "name":"Kabuto",
+      "name": "Kabuto",
       "desc": "Um Pokémon quase extinto. A cada três dias, ele muda a casca, que endurece progressivamente.",
-      "price": "470",
+      "price": 470,
       "cardNumber": "#140",
-       "amount": 27,
       "type": {
         "tp1": "Rochoso",
         "tp2": "Água"
@@ -1682,11 +1585,10 @@
     },
     {
       "id": 141,
-      "name":"Kabutops",
+      "name": "Kabutops",
       "desc": "Ele rasga a presa que pega para sorver seus fluidos e deixa os restos para que outros Pokémon façam um bom relato deles",
-      "price": "590",
+      "price": 590,
       "cardNumber": "#141",
-       "amount": 59,
       "type": {
         "tp1": "Rochoso",
         "tp2": "Água"
@@ -1694,11 +1596,10 @@
     },
     {
       "id": 142,
-      "name":"Aerodactyl",
+      "name": "Aerodactyl",
       "desc": "Um Pokémon feroz dos tempos pré-históricos que nem todos os avanços tecnológicos atuais são suficientes para se regenerar perfeitamente.",
-      "price": "620",
+      "price": 662,
       "cardNumber": "#142",
-       "amount": 47,
       "type": {
         "tp1": "Rochoso",
         "tp2": ""
@@ -1706,11 +1607,10 @@
     },
     {
       "id": 143,
-      "name":"Snorlax",
+      "name": "Snorlax",
       "desc": "Você não fica satisfeito até que tenha ingerido 400 kg de comida por dia. Quando ele termina de comer, ele adormece.",
-      "price": "645",
+      "price": 645,
       "cardNumber": "#143",
-       "amount": 68,
       "type": {
         "tp1": "Normal",
         "tp2": ""
@@ -1718,11 +1618,10 @@
     },
     {
       "id": 144,
-      "name":"Articuno",
+      "name": "Articuno",
       "desc": "Dizem que suas belas asas azuis são feitas de gelo. Ele voa pelas montanhas nevadas com sua longa cauda ao vento.",
-      "price": "685",
+      "price": 685,
       "cardNumber": "#144",
-       "amount": 38,
       "type": {
         "tp1": "Gelo",
         "tp2": ""
@@ -1730,11 +1629,10 @@
     },
     {
       "id": 145,
-      "name":"Zapdos",
+      "name": "Zapdos",
       "desc": "Ele tem o poder de controlar a eletricidade à vontade. De acordo com a crença popular, nidifica escondido em nuvens escuras de tempestade.",
-      "price": "655",
+      "price": 655,
       "cardNumber": "#145",
-       "amount": 50,
       "type": {
         "tp1": "Elétrico",
         "tp2": ""
@@ -1742,11 +1640,10 @@
     },
     {
       "id": 146,
-      "name":"Moltres",
+      "name": "Moltres",
       "desc": "Um dos pássaros lendários. Conforme as asas batem, as chamas que as cercam emitem um lindo brilho vermelho.",
-      "price": "710",
+      "price": 710,
       "cardNumber": "#146",
-       "amount": 31,
       "type": {
         "tp1": "Fogo",
         "tp2": ""
@@ -1754,11 +1651,10 @@
     },
     {
       "id": 147,
-      "name":"Dratini",
+      "name": "Dratini",
       "desc": "Vive nas margens junto a fortes correntes de água, como debaixo de cascatas. Ele muda a pele repetidamente à medida que cresce.",
-      "price": "435",
+      "price": 435,
       "cardNumber": "#147",
-       "amount": 19,
       "type": {
         "tp1": "Dragão",
         "tp2": ""
@@ -1766,11 +1662,10 @@
     },
     {
       "id": 148,
-      "name":"Dragonair",
+      "name": "Dragonair",
       "desc": "Vive em lagos e mares cristalinos. Seu poder de controlar o clima permite que ele voe levado pelo vento.",
-      "price": "615",
+      "price": 615,
       "cardNumber": "#148",
-       "amount": 46,
       "type": {
         "tp1": "Dragão",
         "tp2": ""
@@ -1778,11 +1673,10 @@
     },
     {
       "id": 149,
-      "name":"Dragonite",
+      "name": "Dragonite",
       "desc": "Um Pokémon atencioso e compassivo que acha impossível virar as costas para Pokémon errantes ou humanos.",
-      "price": "805",
+      "price": 805,
       "cardNumber": "#149",
-       "amount": 36,
       "type": {
         "tp1": "Dragão",
         "tp2": ""
@@ -1790,11 +1684,10 @@
     },
     {
       "id": 150,
-      "name":"Mewtwo",
+      "name": "Mewtwo",
       "desc": "Seu DNA é quase igual ao de Mew. No entanto, seu tamanho e caráter são muito diferentes.",
-      "price": "685",
+      "price": 2985,
       "cardNumber": "#150",
-       "amount": 86,
       "type": {
         "tp1": "Psiquico",
         "tp2": ""
@@ -1802,11 +1695,10 @@
     },
     {
       "id": 151,
-      "name":"Mew",
+      "name": "Mew",
       "desc": "Se você olhar através de um microscópio, você pode dizer como é curto, fino e delicado o pelo deste Pokémon.",
-      "price": "590",
+      "price": 3800,
       "cardNumber": "#151",
-       "amount": 24,
       "type": {
         "tp1": "Psiquico",
         "tp2": ""
@@ -1875,6 +1767,27 @@
       "password": "123",
       "confirmedPassword": "123",
       "id": 9
+    },
+    {
+      "name": "Kelly",
+      "email": "mwkellyluz@gmail.com",
+      "password": "12345",
+      "confirmedPassword": "12345",
+      "id": 10
+    },
+    {
+      "name": "Kelly",
+      "email": "mwkellyluz@gmail.com",
+      "password": "12345",
+      "confirmedPassword": "12345",
+      "id": 11
+    },
+    {
+      "name": "Cleydson Souza",
+      "email": "cley.souza007@gmail.com",
+      "password": "abcd",
+      "confirmedPassword": "abcd",
+      "id": 12
     }
   ]
 }

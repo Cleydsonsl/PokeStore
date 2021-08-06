@@ -6,7 +6,7 @@ export function Header() {
   return (
     <Container>
       <Content>
-        <img src={logoImg} alt="PokéStore" />
+        <a href="http://localhost:3000/"><img src={logoImg} alt="PokéStore" /></a>
       </Content>
     </Container>
   )

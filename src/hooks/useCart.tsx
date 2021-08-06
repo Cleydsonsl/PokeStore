@@ -1,7 +1,7 @@
 import { createContext, ReactNode, useContext, useState } from 'react';
 import { toast } from 'react-toastify';
 import { api } from '../services/api';
-import { IPokeProduct } from '../types';
+import { Product, Stock } from '../types';
 
 interface CartProviderProps {
   children: ReactNode;
@@ -13,7 +13,7 @@ interface UpdateProductAmount {
 }
 
 interface CartContextData {
-  cart: IPokeProduct[];
+  cart: Product[];
   addProduct: (productId: number) => Promise<void>;
   removeProduct: (productId: number) => void;
   updateProductAmount: ({ productId, amount }: UpdateProductAmount) => void;
@@ -22,8 +22,8 @@ interface CartContextData {
 const CartContext = createContext<CartContextData>({} as CartContextData);
 
 export function CartProvider({ children }: CartProviderProps): JSX.Element {
-  const [cart, setCart] = useState<IPokeProduct[]>(() => {
-    const storagedCart = localStorage.getItem('@pokestore:cart')
+  const [cart, setCart] = useState<Product[]>(() => {
+    const storagedCart = localStorage.getItem('@PokeStore:cart')
 
     if (storagedCart) {
       return JSON.parse(storagedCart);
@@ -34,36 +34,54 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
 
   const addProduct = async (productId: number) => {
     try {
-      const updatedCart = [...cart];
-      const productExists = updatedCart.find(product => product.id === productId);
+      const productAlreadyInCart = cart.find(product => product.id === productId)
 
-      const currentAmount = productExists ? productExists.amount : 0;
-      const amount = currentAmount + 1;
+      if(!productAlreadyInCart) {
+        const { data: product } = await api.get<Product>(`products/${productId}`)
+        const { data: stock } = await api.get<Stock>(`stock/${productId}`)
 
-      if(productExists) {
-        productExists.amount = amount;
-      } else {
-        const product = await api.get(`/pokemon/${productId}`);
-
-        const newProduct = {
-          ...product.data,
-          amout: 1
+        if(stock.amount > 0) {
+          setCart([...cart, {...product, amount: 1}])
+          localStorage.setItem('@PokeStore:cart', JSON.stringify([...cart, {...product, amount: 1}]))
+          toast('Adicionado')
+          return;
         }
-        updatedCart.push(newProduct);
       }
 
-      setCart(updatedCart);
-      localStorage.setItem('@pokestore:cart', JSON.stringify(updatedCart));
+      if(productAlreadyInCart) {
+        const { data: stock } = await api.get(`stock/${productId}`)
+
+        if (stock.amount > productAlreadyInCart.amount) {
+          const updatedCart = cart.map(cartItem => cartItem.id === productId ? {
+            ...cartItem,
+            amount: Number(cartItem.amount) + 1
+          } : cartItem)
+  
+          setCart(updatedCart)
+          localStorage.setItem('@PokeStore:cart', JSON.stringify(updatedCart))
+          return;
+        } else {
+          toast.error('Quantidade solicitada fora de estoque')
+        }
+      }
     } catch {
-      toast.error('Erro ao adicionar no carrinho')
+      toast.error('Erro na adição do produto')
     }
   };
 
   const removeProduct = (productId: number) => {
     try {
-      // TODO
+      const productExists = cart.some(cartProduct => cartProduct.id === productId)
+      if(!productExists) {
+        toast.error('Erro na remoção do produto');
+        return
+      }
+
+      const updatedCart = cart.filter(cartItem => cartItem.id !== productId)
+      setCart(updatedCart)
+      localStorage.setItem('@PokeStore:cart', JSON.stringify(updatedCart))
     } catch {
-      // TODO
+      toast.error('Erro na remoção do produto');
     }
   };
 
@@ -72,9 +90,34 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
     amount,
   }: UpdateProductAmount) => {
     try {
-      // TODO
+      if(amount < 1){
+        toast.error('Erro na alteração de quantidade do produto');
+        return
+      }
+
+      const response = await api.get(`/stock/${productId}`);
+      const productAmount = response.data.amount;
+      const stockIsFree = amount > productAmount
+
+      if(stockIsFree) {
+        toast.error('Quantidade solicitada fora de estoque')
+        return
+      }
+
+      const productExists = cart.some(cartProduct => cartProduct.id === productId)
+      if(!productExists) {
+        toast.error('Erro na alteração de quantidade do produto');
+        return
+      }
+
+      const updatedCart = cart.map(cartItem => cartItem.id === productId ? {
+        ...cartItem,
+        amount: amount
+      } : cartItem)
+      setCart(updatedCart)
+      localStorage.setItem('@PokeStore:cart', JSON.stringify(updatedCart))
     } catch {
-      // TODO
+      toast.error('Erro na alteração de quantidade do produto');
     }
   };
 
