@@ -33,7 +33,7 @@ export function HeaderFalse({ onOpenNewRegisterModal, onOpenLoginModal }: modalP
           </div>
 
           <span className="car">
-            <FaShoppingCart /> <a href="/cart"> Seu carrinho tem {cartSize === 1 ? `${cartSize} item` : `${cartSize} itens`}</a>
+            <FaShoppingCart /> <a className="cart" href="/cart"> Seu carrinho tem <p className="shop">{cartSize === 1 ? `${cartSize} item` : `${cartSize} itens`}</p></a>
           </span>
         </div>
       </div>

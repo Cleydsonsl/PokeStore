@@ -106,12 +106,12 @@ justify-content: space-around;
   }
 
   .car {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0;
     margin-left: 1rem;
     color: ${mixins.colors.background};
-    font-weight: 400;
-    font-size: 0.9rem;
-    align-items: center;
 
     @media(max-width: 750px) {
       margin-left: 0;
@@ -121,8 +121,22 @@ justify-content: space-around;
       color: ${mixins.colors.white};
       width: 20px;
     }
+    .cart{
+      font-weight: 400;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      margin-left: 0.5rem;
+
+    }
+
+    .shop{
+      font-weight: 700;
+      margin-left: 0.3rem;
+    }
 
   }
+
   a {
     color: ${mixins.colors.background};
     text-decoration: none;
