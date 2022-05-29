@@ -17,11 +17,7 @@ export function App() {
       <AuthProvider>
         <UserProvider>
           <CartProvider>
-          
-          
-    
           <Header />
-        
           <Routes />
           </CartProvider>          
         </UserProvider>
